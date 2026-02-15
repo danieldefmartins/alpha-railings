@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 /* 
   ALPHA RAILINGS - PREMIUM DESIGN SYSTEM
@@ -10,29 +8,6 @@
 */
 
 @layer base {
-  :root {
-    /* Premium Color Palette */
-    --color-charcoal: #1a1a1a;
-    --color-charcoal-light: #2d2d2d;
-    --color-steel-dark: #4a4a4a;
-    --color-steel: #6b6b6b;
-    --color-steel-light: #9b9b9b;
-    --color-glass: #f8f8f8;
-    
-    /* Premium Spacing - Generous breathing room */
-    --space-xs: 0.5rem;
-    --space-sm: 1rem;
-    --space-md: 1.5rem;
-    --space-lg: 2rem;
-    --space-xl: 3rem;
-    --space-2xl: 4.5rem;
-    --space-3xl: 7.5rem;
-    
-    /* Mobile-first padding */
-    --padding-mobile: 1.5rem;
-    --padding-desktop: 2rem;
-  }
-
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -41,10 +16,11 @@
   }
 
   body {
-    @apply bg-white text-charcoal;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 16px;
     line-height: 1.6;
+    background-color: #ffffff;
+    color: #1a1a1a;
   }
 
   /* Premium Typography - Mobile First */
@@ -100,15 +76,15 @@
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: var(--padding-mobile);
-    padding-right: var(--padding-mobile);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     max-width: 100%;
   }
 
   @media (min-width: 768px) {
     .container-premium {
-      padding-left: var(--padding-desktop);
-      padding-right: var(--padding-desktop);
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
@@ -120,76 +96,101 @@
 
   /* Premium Buttons */
   .btn-primary {
-    @apply px-8 py-4 bg-charcoal text-white font-semibold text-base;
-    @apply rounded-full transition-all duration-300;
-    @apply hover:bg-charcoal-light hover:scale-[1.02];
-    @apply active:scale-[0.98];
-    min-height: 52px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+    min-height: 52px;
+  }
+
+  .btn-primary:hover {
+    background-color: #2d2d2d;
+    transform: scale(1.02);
+  }
+
+  .btn-primary:active {
+    transform: scale(0.98);
   }
 
   .btn-secondary {
-    @apply px-8 py-4 border-2 border-charcoal text-charcoal font-semibold text-base;
-    @apply rounded-full transition-all duration-300;
-    @apply hover:bg-charcoal hover:text-white hover:scale-[1.02];
-    @apply active:scale-[0.98];
-    min-height: 52px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem 2rem;
+    border: 2px solid #1a1a1a;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 9999px;
+    transition: all 0.3s;
+    min-height: 52px;
+  }
+
+  .btn-secondary:hover {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    transform: scale(1.02);
+  }
+
+  .btn-secondary:active {
+    transform: scale(0.98);
   }
 
   /* Premium Section Spacing */
   .section-premium {
-    padding-top: var(--space-2xl);
-    padding-bottom: var(--space-2xl);
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
   }
 
   @media (min-width: 768px) {
     .section-premium {
-      padding-top: var(--space-3xl);
-      padding-bottom: var(--space-3xl);
+      padding-top: 7.5rem;
+      padding-bottom: 7.5rem;
     }
   }
 }
 
 /* Custom Color Classes */
 .bg-charcoal {
-  background-color: var(--color-charcoal);
+  background-color: #1a1a1a;
 }
 
 .bg-charcoal-light {
-  background-color: var(--color-charcoal-light);
+  background-color: #2d2d2d;
 }
 
 .bg-steel-dark {
-  background-color: var(--color-steel-dark);
+  background-color: #4a4a4a;
 }
 
 .bg-glass {
-  background-color: var(--color-glass);
+  background-color: #f8f8f8;
 }
 
 .text-charcoal {
-  color: var(--color-charcoal);
+  color: #1a1a1a;
 }
 
 .text-steel-dark {
-  color: var(--color-steel-dark);
+  color: #4a4a4a;
 }
 
 .text-steel {
-  color: var(--color-steel);
+  color: #6b6b6b;
 }
 
 .text-steel-light {
-  color: var(--color-steel-light);
+  color: #9b9b9b;
 }
 
 .border-charcoal {
-  border-color: var(--color-charcoal);
+  border-color: #1a1a1a;
 }
 
 /* Premium Animations */
@@ -210,6 +211,6 @@
 
 /* Premium Focus States */
 *:focus-visible {
-  outline: 2px solid var(--color-charcoal);
+  outline: 2px solid #1a1a1a;
   outline-offset: 4px;
 }
