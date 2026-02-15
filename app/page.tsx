@@ -96,18 +96,18 @@ export default function Home() {
             <h2 className="text-charcoal mb-4">What We Do</h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {[
-              { name: 'Glass Railings', icon: '🪟' },
-              { name: 'Custom Staircases', icon: '🪜' },
-              { name: 'Structural Steel', icon: '🏗️' },
-              { name: 'Cable Systems', icon: '🔗' },
-              { name: 'Custom Ironwork', icon: '⚒️' },
-              { name: 'Aluminum Pergolas', icon: '🏛️' },
+              { name: 'Glass Railings', desc: 'Frameless & semi-frameless systems' },
+              { name: 'Custom Staircases', desc: 'Floating & traditional designs' },
+              { name: 'Structural Steel', desc: 'Heavy-duty fabrication' },
+              { name: 'Cable Railings', desc: 'Stainless steel cable systems' },
+              { name: 'Custom Ironwork', desc: 'Gates, fences & decorative' },
+              { name: 'Aluminum Pergolas', desc: 'Outdoor living solutions' },
             ].map((service) => (
-              <div key={service.name} className="text-center">
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <p className="text-sm font-semibold text-charcoal">{service.name}</p>
+              <div key={service.name} className="bg-white p-6 border border-gray-200 hover:border-charcoal transition-all duration-300">
+                <h3 className="text-lg font-bold text-charcoal mb-2">{service.name}</h3>
+                <p className="text-sm text-steel">{service.desc}</p>
               </div>
             ))}
           </div>
