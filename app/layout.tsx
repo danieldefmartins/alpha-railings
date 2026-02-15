@@ -3,6 +3,7 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
+import StickyCallButton from "@/components/StickyCallButton";
 
 export const metadata: Metadata = {
   title: "Alpha Railings - #1 Staircase & Railing Company in Florida",
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Navigation />
         <main>{children}</main>
         <Footer />
+        <StickyCallButton />
       </body>
     </html>
   );
