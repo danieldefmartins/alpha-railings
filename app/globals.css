@@ -1,156 +1,202 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* 
-  Alpha Railings Website
-  Design Philosophy: Architectural Minimalism with Industrial Elegance
-  
-  Core Principles:
-  - Structural Honesty: Every element serves a purpose
-  - Spatial Rhythm: Asymmetric balance with strategic white space
-  - Material Authenticity: Glass transparency, metal textures
-  - Precision Geometry: Sharp angles, clean lines
+  ALPHA RAILINGS - PREMIUM DESIGN SYSTEM
+  Luxury architectural firm aesthetic
+  Mobile-first (390px iPhone standard)
+  Reference: Apple, Tesla, high-end architecture firms
 */
 
-@theme {
-  /* Custom color palette */
-  --color-charcoal: oklch(0.15 0 0);
-  --color-charcoal-light: oklch(0.25 0 0);
-  --color-charcoal-dark: oklch(0.08 0 0);
-  
-  --color-steel: oklch(0.70 0 0);
-  --color-steel-light: oklch(0.85 0 0);
-  --color-steel-dark: oklch(0.50 0 0);
-  
-  /* Typography scale */
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-base: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.25rem;
-  --font-size-2xl: 1.5rem;
-  --font-size-3xl: 1.875rem;
-  --font-size-4xl: 2.25rem;
-  --font-size-5xl: 3rem;
-  --font-size-6xl: 3.75rem;
-  
-  /* Spacing rhythm */
-  --spacing-xs: 0.5rem;
-  --spacing-sm: 1rem;
-  --spacing-md: 1.5rem;
-  --spacing-lg: 2rem;
-  --spacing-xl: 3rem;
-  --spacing-2xl: 4rem;
-  --spacing-3xl: 6rem;
-}
+@layer base {
+  :root {
+    /* Premium Color Palette */
+    --color-charcoal: #1a1a1a;
+    --color-charcoal-light: #2d2d2d;
+    --color-steel-dark: #4a4a4a;
+    --color-steel: #6b6b6b;
+    --color-steel-light: #9b9b9b;
+    --color-glass: #f8f8f8;
+    
+    /* Premium Spacing - Generous breathing room */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 4.5rem;
+    --space-3xl: 7.5rem;
+    
+    /* Mobile-first padding */
+    --padding-mobile: 1.5rem;
+    --padding-desktop: 2rem;
+  }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
 
-html {
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  body {
+    @apply bg-white text-charcoal;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+  }
 
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background-color: #ffffff;
-  color: #1a1a1a;
-  line-height: 1.7;
-  font-size: 1rem;
-}
+  /* Premium Typography - Mobile First */
+  h1 {
+    font-size: 2.25rem;      /* 36px mobile */
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
 
-/* Typography hierarchy */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
-}
+  h2 {
+    font-size: 1.75rem;      /* 28px mobile */
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
 
-h1 {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
-  font-weight: 800;
-}
+  h3 {
+    font-size: 1.375rem;     /* 22px mobile */
+    line-height: 1.3;
+    font-weight: 600;
+  }
 
-h2 {
-  font-size: clamp(2rem, 4vw, 3rem);
-}
+  p {
+    font-size: 1rem;         /* 16px */
+    line-height: 1.6;
+  }
 
-h3 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-}
+  /* Desktop Typography */
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 3.5rem;     /* 56px desktop */
+    }
 
-/* Smooth transitions */
-a, button {
-  transition: all 0.3s ease-out;
-}
+    h2 {
+      font-size: 2.5rem;     /* 40px desktop */
+    }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
+    h3 {
+      font-size: 1.75rem;    /* 28px desktop */
+    }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Selection color */
-::selection {
-  background-color: #1a1a1a;
-  color: #ffffff;
-}
-
-/* Focus styles for accessibility */
-*:focus-visible {
-  outline: 2px solid #1a1a1a;
-  outline-offset: 2px;
-}
-
-/* Utility classes */
-.container-custom {
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.section-padding {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-@media (min-width: 768px) {
-  .section-padding {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
+    p {
+      font-size: 1.125rem;   /* 18px desktop */
+      line-height: 1.7;
+    }
   }
 }
 
-/* Glass effect */
-.glass-effect {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+@layer components {
+  /* Premium Container */
+  .container-premium {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--padding-mobile);
+    padding-right: var(--padding-mobile);
+    max-width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .container-premium {
+      padding-left: var(--padding-desktop);
+      padding-right: var(--padding-desktop);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container-premium {
+      max-width: 1280px;
+    }
+  }
+
+  /* Premium Buttons */
+  .btn-primary {
+    @apply px-8 py-4 bg-charcoal text-white font-semibold text-base;
+    @apply rounded-full transition-all duration-300;
+    @apply hover:bg-charcoal-light hover:scale-[1.02];
+    @apply active:scale-[0.98];
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-secondary {
+    @apply px-8 py-4 border-2 border-charcoal text-charcoal font-semibold text-base;
+    @apply rounded-full transition-all duration-300;
+    @apply hover:bg-charcoal hover:text-white hover:scale-[1.02];
+    @apply active:scale-[0.98];
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Premium Section Spacing */
+  .section-premium {
+    padding-top: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+  }
+
+  @media (min-width: 768px) {
+    .section-premium {
+      padding-top: var(--space-3xl);
+      padding-bottom: var(--space-3xl);
+    }
+  }
 }
 
-/* Fade-up animation */
-@keyframes fadeUp {
+/* Custom Color Classes */
+.bg-charcoal {
+  background-color: var(--color-charcoal);
+}
+
+.bg-charcoal-light {
+  background-color: var(--color-charcoal-light);
+}
+
+.bg-steel-dark {
+  background-color: var(--color-steel-dark);
+}
+
+.bg-glass {
+  background-color: var(--color-glass);
+}
+
+.text-charcoal {
+  color: var(--color-charcoal);
+}
+
+.text-steel-dark {
+  color: var(--color-steel-dark);
+}
+
+.text-steel {
+  color: var(--color-steel);
+}
+
+.text-steel-light {
+  color: var(--color-steel-light);
+}
+
+.border-charcoal {
+  border-color: var(--color-charcoal);
+}
+
+/* Premium Animations */
+@keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -158,12 +204,12 @@ a, button {
   }
 }
 
-.animate-fade-up {
-  animation: fadeUp 0.6s ease-out forwards;
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out;
 }
 
-/* Staggered animation delays */
-.delay-100 { animation-delay: 0.1s; }
-.delay-200 { animation-delay: 0.2s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-400 { animation-delay: 0.4s; }
+/* Premium Focus States */
+*:focus-visible {
+  outline: 2px solid var(--color-charcoal);
+  outline-offset: 4px;
+}
