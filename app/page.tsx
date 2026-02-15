@@ -16,7 +16,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://private-us-east-1.manuscdn.com/sessionFile/pjGRSmqy5P2kuJJXT7VjSr/sandbox/L5W4eTfZc4GdkOgRjtq9j6-img-1_1771167862000_na1fn_aGVyby1tb2Rlcm4tZmxvYXRpbmctc3RhaXJjYXNl.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcGpHUlNtcXk1UDJrdUpKWFQ3VmpTci9zYW5kYm94L0w1VzRlVGZaYzRHZGtPZ1JqdHE5ajYtaW1nLTFfMTc3MTE2Nzg2MjAwMF9uYTFmbl9hR1Z5YnkxdGIyUmxjbTR0Wm14dllYUnBibWN0YzNSaGFYSmpZWE5sLnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=a6DsVLAzdPVAo4s8KbirWWfP09FCIcqkyl224puYPuJswepSJDszLQEaKez2h8XYRnGmw5h7p2Xh1sGDngOz3IL~CFBnZqrscYYO4BkupXleCy~dOHgd~Iihv3HF5gVnAfOYUGgIvAAkvE2vFzLaB-TdceWKCpm-0LswP01MYQ4u6jMzmhbqOG6b5wtSMp3RUkRr~FUWha6DhA9tfoYHXlriGA~GyAtOSdlo5TZg8EWVfaMtObo8G7isCeNSyFujIbAGGt6wIfagk41dDl0kkckiB-EJjkJjNJWpgfLxD2k5xSuzyE6AXPc2m4NoRbF2-0p7gQJfiSIOa41DPK-7cQ__"
+            src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663313028198/GumLcPZmoAbmIlqE.JPG"
             alt="Modern floating staircase with meadow view"
             fill
             className="object-cover"
@@ -58,7 +58,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             <div className="relative h-96 md:h-[500px] overflow-hidden group">
               <Image
-                src="https://private-us-east-1.manuscdn.com/sessionFile/pjGRSmqy5P2kuJJXT7VjSr/sandbox/idjQjpLaPrut8DTim7SKGB-img-2_1771166719000_na1fn_aGVyby1nbGFzcy1yYWlsaW5nLW9jZWFu.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcGpHUlNtcXk1UDJrdUpKWFQ3VmpTci9zYW5kYm94L2lkalFqcExhUHJ1dDhEVGltN1NLR0ItaW1nLTJfMTc3MTE2NjcxOTAwMF9uYTFmbl9hR1Z5Ynkxbmj JGRnpjeTF5WVdsc2FXNW5MVzlqWldGdS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=aPCbxuKRMhIHwNL-Qch59heA1AAPq73vznXKk6jugawCNvQ83OAnvPe1IORBwD6AqyuDKhiRVhyq8UDc9yVcP41KKEbvDXSIuKy4jW-P8dZm2Tzpnmtrun3v1P8F-3R-FqgRuZCO3oWISM~pSz8SGwdQycEgv3c4cMws0wfH3Gw9Jx~btMdZFofdxvaMzDXFAfQE3FRsRvcLJbl~RrtVmaGmmeqcsEJETwec0AL6fQ3RhalurCWdIhpkHpJn47EkKOQcz0uulxDb3cYEenfiPcd8gzuFawzMP46zNztW7Gl6QBLzlEC5FZBFRfwkGJyZJwL1AY6RxzF2BcNnZCwayA__"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663313028198/jyTWywRrldRWGpEX.JPG"
                 alt="Frameless glass railing system"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -73,7 +73,7 @@ export default function Home() {
 
             <div className="relative h-96 md:h-[500px] overflow-hidden group">
               <Image
-                src="https://private-us-east-1.manuscdn.com/sessionFile/pjGRSmqy5P2kuJJXT7VjSr/sandbox/idjQjpLaPrut8DTim7SKGB-img-3_1771166719000_na1fn_aGVyby1jdXN0b20taXJvbndvcms.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvcGpHUlNtcXk1UDJrdUpKWFQ3VmpTci9zYW5kYm94L2lkalFqcExhUHJ1dDhEVGltN1NLR0ItaW1nLTNfMTc3MTE2NjcxOTAwMF9uYTFmbl9hR1Z5Ynkxamj RYM3RiMjB0YVhKdmJuZHZjbXMucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=lrh8bydG4hOxUwfi6-iXk8DwpM267tHlFqWziJUCKVh6j4RnBY4d5lBGX3H1EA1qH6U9BRzL~D7IwRLBRPo6E1LPkYflAjInrkmjR-mtQshe3~aaf8mUTwGAPSZjTf883EVeEqN-f5nStIdQ8VSvR7iK8RamVOfmRKqsWAs6R-cVYLauOQR9ABOL8cfjARevUe3~1a4gZmdGU1u3JMrwRQymis5~AtHTi54v2Fng7Gl1mVLupGtKicZOM6l7dEOgPpn6d-nTi432NimrYpbVAeyyD1upMe910VjHq-eSRnhIMlhzmL4vka7H-oKpr8Alefw7jIHLpFj8JZYGqaIOTQ__"
+                src="https://files.manuscdn.com/user_upload_by_module/session_file/310519663313028198/mGSLNJMzqYiFhFCU.JPG"
                 alt="Custom ironwork gate"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
