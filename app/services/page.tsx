@@ -3,63 +3,83 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Services - Alpha Railings | Glass & Cable Railings in Florida',
-  description: 'Professional glass railings, cable railings, custom staircases, and shower doors. Premium installation services throughout South Florida.',
+  title: 'Our Services - Alpha Railings | Ironworks, Railings & Staircases',
+  description: 'Comprehensive ironworks, structural steel, glass railings, cable railings, custom staircases, and aluminum pergolas for South Florida. Professional installation and premium quality.',
 };
 
 export default function ServicesPage() {
   const services = [
     {
-      title: 'Glass Railings',
-      description: 'Frameless and semi-frameless glass railing systems that provide unobstructed views while maintaining safety and elegance. Perfect for balconies, decks, and interior applications.',
+      title: 'Custom Ironworks',
+      description: 'Transform your property with our artistic and functional custom ironwork. We specialize in creating stunning gates, fences, balconies, window guards, and decorative elements that combine security with aesthetic appeal.',
       features: [
-        'Frameless glass panels',
-        'Semi-frameless systems',
-        'Tempered safety glass',
-        'Custom heights and lengths',
-        'Indoor and outdoor applications',
-        'Modern minimalist design',
+        'Custom ornamental gates and fences',
+        'Decorative balcony railings',
+        'Window guards and security features',
+        'Artistic ironwork designs',
+        'Powder-coated finishes for durability',
+        'Traditional and contemporary styles',
       ],
-      image: '/images/gallery/IMG_0037.JPG',
+    },
+    {
+      title: 'Structural Steel Ironworks',
+      description: 'Heavy-duty structural steel fabrication and installation for commercial and residential projects. Our structural steel solutions provide the backbone for your construction needs with precision engineering and quality craftsmanship.',
+      features: [
+        'Commercial building steel structures',
+        'Residential structural support',
+        'Steel beam fabrication and installation',
+        'Load-bearing structural elements',
+        'Code-compliant engineering',
+        'On-site welding and assembly',
+      ],
+    },
+    {
+      title: 'Glass Railings',
+      description: 'Experience unobstructed views and modern elegance with our premium glass railing systems. We offer both frameless and semi-frameless options using tempered safety glass and marine-grade stainless steel hardware.',
+      features: [
+        'Frameless glass railing systems',
+        'Semi-frameless glass panels',
+        'Tempered safety glass',
+        'Marine-grade stainless steel hardware',
+        'Indoor and outdoor applications',
+        'Custom heights and configurations',
+      ],
     },
     {
       title: 'Cable Railings',
-      description: 'Sleek stainless steel cable railing systems that offer a contemporary look with maximum visibility. Ideal for modern homes and commercial spaces.',
+      description: 'Sleek and contemporary cable railing systems that provide safety without compromising your view. Perfect for decks, balconies, and staircases where maintaining sight lines is essential.',
       features: [
-        'Marine-grade stainless steel',
-        'Horizontal or vertical cables',
-        'Minimal visual obstruction',
-        'Weather-resistant',
-        'Low maintenance',
+        'Stainless steel cable systems',
+        '1/8" and 3/16" cable options',
+        'Powder-coated or stainless posts',
+        'Horizontal or vertical configurations',
         'Code-compliant spacing',
+        'Low-maintenance design',
       ],
-      image: '/images/gallery/IMG_0038.JPG',
     },
     {
       title: 'Custom Staircases',
-      description: 'Architectural staircase design and fabrication tailored to your space. From floating stairs to grand entrances, we create stunning focal points.',
+      description: 'Make a statement with a custom-designed staircase that serves as the centerpiece of your space. From floating stairs to spiral designs, we create architectural masterpieces tailored to your vision.',
       features: [
         'Floating staircase designs',
-        'Glass tread staircases',
-        'Metal and wood combinations',
-        'Custom handrails',
-        'Structural engineering',
-        'Unique architectural solutions',
+        'Spiral and curved staircases',
+        'Modern and traditional styles',
+        'Wood, metal, and glass combinations',
+        'Custom tread and riser options',
+        'Integrated lighting solutions',
       ],
-      image: '/images/gallery/IMG_0039.JPG',
     },
     {
-      title: 'Shower Doors',
-      description: 'Custom frameless shower enclosures that transform your bathroom into a spa-like retreat. Precision-crafted for perfect fit and function.',
+      title: 'Aluminum Custom Pergolas',
+      description: 'Enhance your outdoor living space with our durable, low-maintenance aluminum pergolas. Designed to withstand South Florida climate while providing style and shade for years to come.',
       features: [
-        'Frameless glass doors',
-        'Semi-frameless options',
-        'Custom sizes and shapes',
-        'Heavy-duty hardware',
-        'Easy-clean glass coating',
-        'Professional installation',
+        'Powder-coated aluminum construction',
+        'Weather-resistant and rust-proof',
+        'Customizable sizes and styles',
+        'Integrated lighting options',
+        'Louvered roof systems available',
+        'Minimal maintenance required',
       ],
-      image: '/images/gallery/IMG_0040.JPG',
     },
   ];
 
@@ -68,11 +88,11 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="section-padding bg-charcoal text-white">
         <div className="container-custom text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4 md:mb-6">
             Our Services
           </h1>
-          <p className="text-xl text-steel-light max-w-3xl mx-auto">
-            Comprehensive railing and staircase solutions designed and installed by Florida's leading experts
+          <p className="text-lg md:text-xl text-steel-light max-w-3xl mx-auto">
+            Comprehensive ironworks, railing, and staircase solutions for South Florida
           </p>
         </div>
       </section>
@@ -80,40 +100,20 @@ export default function ServicesPage() {
       {/* Services Grid */}
       <section className="section-padding bg-white">
         <div className="container-custom">
-          {services.map((service, index) => (
-            <div
-              key={service.title}
-              className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24 last:mb-0 ${
-                index % 2 === 1 ? 'lg:grid-flow-dense' : ''
-              }`}
-            >
-              {/* Image */}
-              <div className={`relative h-96 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              {/* Content */}
-              <div className={index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}>
-                <h2 className="text-4xl font-bold text-charcoal mb-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {services.map((service, index) => (
+              <div key={service.title} className="bg-gray-50 p-6 md:p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-charcoal mb-4">
                   {service.title}
                 </h2>
-                <p className="text-lg text-steel-dark mb-6 leading-relaxed">
+                <p className="text-base md:text-lg text-steel-dark mb-6 leading-relaxed">
                   {service.description}
                 </p>
-
-                <h3 className="text-xl font-bold text-charcoal mb-4">
-                  Features & Benefits:
-                </h3>
-                <ul className="space-y-2 mb-8">
+                <ul className="space-y-3 mb-6">
                   {service.features.map((feature) => (
-                    <li key={feature} className="flex items-start">
+                    <li key={feature} className="flex items-start gap-3">
                       <svg
-                        className="w-6 h-6 text-charcoal mr-3 flex-shrink-0 mt-0.5"
+                        className="w-5 h-5 md:w-6 md:h-6 text-charcoal flex-shrink-0 mt-1"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -125,68 +125,16 @@ export default function ServicesPage() {
                           d="M5 13l4 4L19 7"
                         />
                       </svg>
-                      <span className="text-steel-dark">{feature}</span>
+                      <span className="text-sm md:text-base text-steel-dark">{feature}</span>
                     </li>
                   ))}
                 </ul>
-
                 <Link
                   href="/contact"
-                  className="inline-block px-8 py-3 bg-charcoal text-white font-bold hover:bg-charcoal-light transition-colors"
+                  className="inline-block px-6 md:px-8 py-3 md:py-4 bg-charcoal text-white font-bold text-sm md:text-base hover:bg-charcoal-light transition-all"
                 >
-                  Request Quote
+                  Get a Quote
                 </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="section-padding bg-gray-50">
-        <div className="container-custom">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-charcoal mb-4">
-              Our Process
-            </h2>
-            <p className="text-xl text-steel-dark max-w-2xl mx-auto">
-              From consultation to installation, we ensure a seamless experience
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {[
-              {
-                step: '01',
-                title: 'Consultation',
-                description: 'We discuss your vision, take measurements, and provide expert recommendations.',
-              },
-              {
-                step: '02',
-                title: 'Design & Quote',
-                description: 'Receive a detailed proposal with 3D renderings and transparent pricing.',
-              },
-              {
-                step: '03',
-                title: 'Fabrication',
-                description: 'Custom fabrication using premium materials and precision engineering.',
-              },
-              {
-                step: '04',
-                title: 'Installation',
-                description: 'Professional installation by certified technicians with quality guarantee.',
-              },
-            ].map((item) => (
-              <div key={item.step} className="text-center">
-                <div className="text-6xl font-bold text-steel-light mb-4">
-                  {item.step}
-                </div>
-                <h3 className="text-xl font-bold text-charcoal mb-3">
-                  {item.title}
-                </h3>
-                <p className="text-steel-dark">
-                  {item.description}
-                </p>
               </div>
             ))}
           </div>
@@ -196,22 +144,22 @@ export default function ServicesPage() {
       {/* CTA Section */}
       <section className="section-padding bg-charcoal text-white">
         <div className="container-custom text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-steel-light max-w-2xl mx-auto mb-10">
-            Contact us today for a free consultation and quote
+          <p className="text-lg md:text-xl text-steel-light max-w-2xl mx-auto mb-8 md:mb-10">
+            Contact us today for a free consultation and quote on your project
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-white text-charcoal font-bold text-lg hover:bg-steel-light transition-all"
+              className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white text-charcoal font-bold text-base md:text-lg hover:bg-gray-100 transition-all"
             >
               Request Free Quote
             </Link>
             <a
-              href="tel:954-953-0830"
-              className="px-8 py-4 border-2 border-white text-white font-bold text-lg hover:bg-white hover:text-charcoal transition-all"
+              href="tel:9549530830"
+              className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 border-2 border-white text-white font-bold text-base md:text-lg hover:bg-white hover:text-charcoal transition-all"
             >
               Call (954) 953-0830
             </a>
