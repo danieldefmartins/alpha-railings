@@ -19,6 +19,12 @@ export default function IronRailingsPage() {
       badge="Iron Railings"
       title="Custom Iron Railings & Handrails"
       subtitle="Hand-forged wrought iron and steel railings in ornamental, transitional, and modern minimalist styles. Built for strength, finished for beauty."
+      heroImage="/photos/iron-staircase-chandelier.jpg"
+      gallery={[
+        { src: "/photos/horizontal-iron-railing-loft.jpg", alt: "Horizontal iron railing in loft space" },
+        { src: "/photos/geometric-iron-railing.jpg", alt: "Geometric pattern iron railing" },
+        { src: "/photos/iron-vertical-bar-staircase.jpg", alt: "Iron vertical bar staircase railing" },
+      ]}
       description="From classic scrollwork to clean contemporary lines, our custom iron railings and handrails are designed and fabricated to your exact specifications. Every piece is hand-welded by our skilled metalworkers, then finished with a multi-step powder coating process for lasting durability and color. Whether it is a grand staircase railing, a balcony guardrail, or a simple exterior handrail, we deliver craftsmanship that stands the test of time."
       features={[
         {

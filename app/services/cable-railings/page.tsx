@@ -19,6 +19,12 @@ export default function CableRailingsPage() {
       badge="Cable Railings"
       title="Stainless Steel Cable Railing Systems"
       subtitle="Marine-grade 316 stainless steel cable railings for decks, balconies, staircases, and commercial properties. Minimal design with maximum durability and unobstructed views."
+      heroImage="/photos/cable-railing-interior.jpg"
+      gallery={[
+        { src: "/photos/exterior-cable-railing.jpg", alt: "Exterior cable railing on deck" },
+        { src: "/photos/floating-cable-staircase.jpg", alt: "Floating staircase with cable railings" },
+        { src: "/photos/cable-railing-wood-cap.jpg", alt: "Cable railing with wood cap rail" },
+      ]}
       description="Our cable railing systems combine a sleek, modern look with exceptional strength and corrosion resistance. We use 316 marine-grade stainless steel cable and fittings — the same grade used in marine and coastal applications — ensuring your railings stand up to salt air, rain, and UV exposure for decades. Available in horizontal or vertical cable configurations with wood, metal, or composite posts."
       features={[
         {

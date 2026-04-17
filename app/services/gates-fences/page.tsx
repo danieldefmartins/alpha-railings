@@ -19,6 +19,11 @@ export default function GatesFencesPage() {
       badge="Gates & Fences"
       title="Custom Gates & Fences"
       subtitle="Driveway gates, pedestrian gates, and perimeter fencing in iron, steel, and aluminum. Manual or fully automated — designed for security and curb appeal."
+      heroImage="/photos/exterior-gate.jpg"
+      gallery={[
+        { src: "/photos/railing-project-8.jpg", alt: "Custom gate installation" },
+        { src: "/photos/railing-project-6.jpg", alt: "Iron fence and gate project" },
+      ]}
       description="Our custom gates and fences combine security with striking design. Whether you need an automated driveway gate with keypad access, a decorative pedestrian gate, or a full perimeter fence, we design, fabricate, and install every component. All metalwork is powder coated for lasting durability, and we offer full automation packages including motors, keypads, intercoms, and smartphone integration."
       features={[
         {

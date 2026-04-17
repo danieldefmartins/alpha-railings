@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,11 +20,18 @@ interface FAQ {
   answer: string;
 }
 
+interface GalleryImage {
+  src: string;
+  alt: string;
+}
+
 interface ServicePageProps {
   badge: string;
   title: string;
   subtitle: string;
   description: string;
+  heroImage?: string;
+  gallery?: GalleryImage[];
   features: Feature[];
   process: ProcessStep[];
   faqs: FAQ[];
@@ -75,6 +83,8 @@ export function ServicePage({
   title,
   subtitle,
   description,
+  heroImage,
+  gallery,
   features,
   process,
   faqs,
@@ -86,7 +96,21 @@ export function ServicePage({
       {/* Hero */}
       <section className="relative bg-primary overflow-hidden min-h-[60vh] flex items-center">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-accent/10" />
+          {heroImage ? (
+            <>
+              <Image
+                src={heroImage}
+                alt={title}
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-primary/70" />
+            </>
+          ) : (
+            <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary/95 to-accent/10" />
+          )}
           <div
             className="absolute top-0 right-0 w-1/2 h-full opacity-5"
             style={{
@@ -164,8 +188,52 @@ export function ServicePage({
         </div>
       </section>
 
+      {/* Project Gallery */}
+      {gallery && gallery.length > 0 && (
+        <section className="py-24 sm:py-32 bg-secondary">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <span className="text-accent font-display font-semibold text-sm uppercase tracking-widest">
+                Our Work
+              </span>
+              <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
+                Recent Projects
+              </h2>
+              <p className="mt-4 text-muted-foreground text-lg">
+                Browse our portfolio of completed {badge.toLowerCase()} installations.
+              </p>
+            </div>
+            <div
+              className={`grid grid-cols-1 sm:grid-cols-2 ${
+                gallery.length === 4
+                  ? "lg:grid-cols-4"
+                  : gallery.length >= 3
+                    ? "lg:grid-cols-3"
+                    : ""
+              } gap-4`}
+            >
+              {gallery.map((image) => (
+                <div
+                  key={image.src}
+                  className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-border group"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Process Steps */}
-      <section className="py-24 sm:py-32 bg-secondary">
+      <section className={`py-24 sm:py-32 ${gallery && gallery.length > 0 ? "" : "bg-secondary"}`}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <span className="text-accent font-display font-semibold text-sm uppercase tracking-widest">

@@ -7,48 +7,56 @@ const services = [
     description: "Frameless and semi-frameless tempered glass. Sleek, modern, unobstructed views.",
     href: "/services/glass-railings",
     gradient: "from-cyan-500/20 to-blue-500/20",
+    image: "/photos/glass-railing-staircase.jpg",
   },
   {
     title: "Cable Railings",
     description: "Marine-grade stainless steel cable systems. Minimal, durable, code-compliant.",
     href: "/services/cable-railings",
     gradient: "from-slate-500/20 to-zinc-500/20",
+    image: "/photos/cable-railing-interior.jpg",
   },
   {
     title: "Iron Railings",
     description: "Custom wrought iron and steel. Ornamental and modern designs, built to last.",
     href: "/services/iron-railings",
     gradient: "from-amber-500/20 to-orange-500/20",
+    image: "/photos/iron-staircase-chandelier.jpg",
   },
   {
     title: "Staircases",
     description: "Floating, spiral, and straight staircases. Steel, glass, and mixed materials.",
     href: "/services/staircases",
     gradient: "from-violet-500/20 to-purple-500/20",
+    image: "/photos/railing-project-1.jpg",
   },
   {
     title: "Gates & Fences",
     description: "Custom driveway and pedestrian gates. Automated and manual options.",
     href: "/services/gates-fences",
     gradient: "from-emerald-500/20 to-teal-500/20",
+    image: "/photos/exterior-gate.jpg",
   },
   {
     title: "Shower Doors",
     description: "Frameless glass shower enclosures. Custom-measured, precision-fitted.",
     href: "/services/shower-doors",
     gradient: "from-sky-500/20 to-indigo-500/20",
+    image: "/photos/shower-door.jpg",
   },
   {
     title: "Glass Partitions",
     description: "Commercial and residential dividers. Open, light-filled spaces with privacy.",
     href: "/services/glass-partitions",
     gradient: "from-rose-500/20 to-pink-500/20",
+    image: "/photos/glass-partition-office.jpg",
   },
   {
     title: "Commercial",
     description: "ADA-compliant railing systems for offices, retail, and multi-family buildings.",
     href: "/services/commercial-railings",
     gradient: "from-yellow-500/20 to-amber-500/20",
+    image: "/photos/commercial-glass-staircase.jpg",
   },
 ];
 
@@ -288,8 +296,15 @@ export default function Home() {
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                 <div className="relative">
-                  <div className="h-32 rounded-xl bg-gradient-to-br from-white/[0.03] to-white/[0.01] border border-white/5 mb-5 flex items-center justify-center">
-                    <span className="text-muted-foreground/30 text-xs uppercase tracking-widest">Photo</span>
+                  <div className="h-32 rounded-xl overflow-hidden mb-5 relative">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    />
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
                   </div>
                   <h3 className="font-display text-base font-bold text-foreground mb-2 group-hover:text-accent transition-colors">
                     {service.title}
@@ -439,26 +454,29 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { title: "Oceanfront Glass Railings", location: "Fort Lauderdale, FL", type: "Glass", h: "h-80" },
-              { title: "Commercial Cable System", location: "Boston, MA", type: "Cable", h: "h-64" },
-              { title: "Custom Spiral Staircase", location: "Portsmouth, NH", type: "Iron", h: "h-80" },
-              { title: "Frameless Shower Enclosure", location: "Miami Beach, FL", type: "Glass", h: "h-64" },
-              { title: "Iron Driveway Gate", location: "Providence, RI", type: "Iron", h: "h-80" },
-              { title: "Glass Office Partitions", location: "Cambridge, MA", type: "Glass", h: "h-64" },
+              { title: "Curved Glass Railing", location: "Commercial Office", type: "Glass", h: "h-80", image: "/photos/curved-glass-railing-office.jpg" },
+              { title: "Iron Staircase", location: "Residential, NH", type: "Iron", h: "h-64", image: "/photos/iron-staircase-chandelier.jpg" },
+              { title: "Glass Railing", location: "Residential, MA", type: "Glass", h: "h-80", image: "/photos/glass-railing-staircase.jpg" },
+              { title: "Floating Staircase", location: "Residential, MA", type: "Cable", h: "h-64", image: "/photos/floating-cable-staircase.jpg" },
+              { title: "Glass Partitions", location: "Commercial Office", type: "Glass", h: "h-80", image: "/photos/glass-partition-office.jpg" },
+              { title: "Cable Railing", location: "Residential Exterior", type: "Cable", h: "h-64", image: "/photos/exterior-cable-railing.jpg" },
             ].map((project) => (
               <div
                 key={project.title}
                 className={`group relative ${project.h} rounded-2xl overflow-hidden border border-border hover:border-accent/20 transition-all duration-500 cursor-pointer`}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-white/[0.04] to-white/[0.01]" />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors duration-500" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-500">
                   <span className="text-accent text-xs font-bold uppercase tracking-widest">{project.type}</span>
                   <h3 className="font-display font-bold text-white text-lg mt-1">{project.title}</h3>
                   <p className="text-white/60 text-sm">{project.location}</p>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center group-hover:opacity-0 transition-opacity">
-                  <span className="text-muted-foreground/20 text-xs uppercase tracking-widest">Photo</span>
                 </div>
               </div>
             ))}

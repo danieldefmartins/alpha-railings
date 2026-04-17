@@ -19,6 +19,7 @@ export default function ShowerDoorsPage() {
       badge="Shower Doors"
       title="Frameless Glass Shower Doors"
       subtitle="Custom frameless glass shower enclosures, sliding doors, hinged doors, and specialty shapes. Precision-measured, beautifully installed, and built to last."
+      heroImage="/photos/shower-door.jpg"
       description="Transform your bathroom with a custom frameless glass shower enclosure. We design and install shower doors that eliminate bulky frames, making your bathroom feel larger and more luxurious. Every enclosure is precision-measured for your exact shower opening and built with thick tempered glass and premium hardware in finishes like chrome, brushed nickel, matte black, and gold."
       features={[
         {

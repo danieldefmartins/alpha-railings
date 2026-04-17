@@ -48,14 +48,14 @@ export function Header() {
           </div>
         </div>
 
-        <nav className="flex h-16 lg:h-18 items-center justify-between">
+        <nav className="flex h-16 lg:h-20 items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
               src="/logo-header.png"
               alt="Alpha Railings"
-              width={190}
-              height={50}
-              className="h-8 lg:h-14 w-auto"
+              width={280}
+              height={74}
+              className="h-9 lg:h-[3.5rem] w-auto"
               priority
             />
           </Link>

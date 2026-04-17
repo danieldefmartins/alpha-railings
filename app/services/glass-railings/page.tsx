@@ -19,6 +19,12 @@ export default function GlassRailingsPage() {
       badge="Glass Railings"
       title="Frameless & Semi-Frameless Glass Railings"
       subtitle="Sleek, modern tempered glass railing systems for balconies, decks, staircases, and interior spaces. Unobstructed views with maximum safety and style."
+      heroImage="/photos/glass-railing-staircase.jpg"
+      gallery={[
+        { src: "/photos/glass-railing-staircase-2.jpg", alt: "Glass railing on modern staircase" },
+        { src: "/photos/modern-glass-staircase.jpg", alt: "Modern glass staircase installation" },
+        { src: "/photos/marble-floating-stairs.jpg", alt: "Marble floating stairs with glass railings" },
+      ]}
       description="Our glass railing systems are engineered for beauty and durability. We use premium tempered and laminated glass panels with precision-machined hardware in stainless steel, brass, or matte black finishes. Whether you need frameless glass railings for a waterfront balcony or semi-frameless panels for an interior staircase, every installation is custom-measured, fabricated, and professionally installed by our in-house crew."
       features={[
         {

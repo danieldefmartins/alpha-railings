@@ -19,6 +19,13 @@ export default function CommercialRailingsPage() {
       badge="Commercial Railings"
       title="Commercial Railing Systems"
       subtitle="ADA-compliant railing systems for multi-family buildings, offices, retail spaces, parking structures, and public facilities. Engineered for durability, designed for code compliance."
+      heroImage="/photos/commercial-glass-staircase.jpg"
+      gallery={[
+        { src: "/photos/university-glass-railing-1.jpg", alt: "University glass railing installation" },
+        { src: "/photos/curved-glass-railing-office.jpg", alt: "Curved glass railing in office building" },
+        { src: "/photos/spiral-staircase-office.jpg", alt: "Spiral staircase in commercial office" },
+        { src: "/photos/mall-glass-railings.jpg", alt: "Glass railings in shopping mall" },
+      ]}
       description="Commercial projects demand railings that meet strict building codes, ADA accessibility requirements, and withstand heavy daily use. We design, engineer, and install commercial railing systems using stainless steel, aluminum, glass, and cable — tailored to your project specifications. From luxury condominiums to parking garages, we deliver on time and on budget with full documentation, shop drawings, and engineering stamps."
       features={[
         {

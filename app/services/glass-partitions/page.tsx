@@ -19,6 +19,12 @@ export default function GlassPartitionsPage() {
       badge="Glass Partitions"
       title="Custom Glass Partitions"
       subtitle="Office dividers, room partitions, and commercial glass walls. Create open, light-filled spaces with privacy, sound control, and modern style."
+      heroImage="/photos/glass-partition-office.jpg"
+      gallery={[
+        { src: "/photos/bank-interior-glass.jpg", alt: "Bank interior glass partition" },
+        { src: "/photos/bank-exterior-glass.jpg", alt: "Bank exterior glass installation" },
+        { src: "/photos/bank-interior-lounge.jpg", alt: "Lounge area with glass partitions" },
+      ]}
       description="Glass partitions let you divide spaces without sacrificing natural light or openness. We design and install custom glass partition systems for offices, conference rooms, residential lofts, restaurants, and retail environments. Choose from clear, frosted, tinted, or switchable smart glass with aluminum, steel, or minimalist framing systems. Every installation is engineered for your space and finished to the highest standard."
       features={[
         {

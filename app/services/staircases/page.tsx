@@ -19,6 +19,12 @@ export default function StaircasesPage() {
       badge="Staircases"
       title="Custom Staircases & Spiral Stairs"
       subtitle="Straight, floating, and spiral staircases crafted from steel, glass, and wood. Engineered for structural integrity and designed to be the centerpiece of your space."
+      heroImage="/photos/railing-project-1.jpg"
+      gallery={[
+        { src: "/photos/railing-project-10.jpg", alt: "Custom staircase project" },
+        { src: "/photos/railing-project-12.jpg", alt: "Staircase installation with modern railings" },
+        { src: "/photos/railing-project-4.jpg", alt: "Completed staircase project" },
+      ]}
       description="A staircase is more than a way to move between floors — it is a statement. We design and fabricate custom staircases that combine structural engineering with stunning aesthetics. From dramatic floating stairs with hidden steel stringers to compact spiral staircases in powder-coated steel, every project is built from scratch to fit your space, your style, and your building codes."
       features={[
         {
