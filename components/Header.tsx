@@ -55,7 +55,7 @@ export function Header() {
               alt="Alpha Railings"
               width={190}
               height={50}
-              className="h-8 lg:h-11 w-auto"
+              className="h-8 lg:h-14 w-auto"
               priority
             />
           </Link>
