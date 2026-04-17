@@ -1,0 +1,6 @@
+.next/
+node_modules/
+.DS_Store
+.claude/
+*.tsbuildinfo
+next-env.d.ts
