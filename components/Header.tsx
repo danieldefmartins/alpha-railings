@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -48,18 +49,15 @@ export function Header() {
         </div>
 
         <nav className="flex h-16 lg:h-18 items-center justify-between">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center">
-              <span className="font-display text-sm font-bold text-primary">A</span>
-            </div>
-            <div>
-              <span className="font-display text-lg font-bold text-white tracking-tight">
-                Alpha
-              </span>
-              <span className="font-display text-lg font-bold text-accent tracking-tight ml-1">
-                Railings
-              </span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo-header.png"
+              alt="Alpha Railings"
+              width={190}
+              height={50}
+              className="h-8 sm:h-9 w-auto"
+              priority
+            />
           </Link>
 
           <div className="hidden lg:flex lg:items-center lg:gap-1">
