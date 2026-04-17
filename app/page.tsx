@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const services = [
@@ -156,36 +157,42 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
-        {/* Animated background orbs */}
-        <div className="absolute inset-0 bg-primary">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-[120px] animate-gradient-1" />
-          <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-blue-500/8 rounded-full blur-[100px] animate-gradient-2" />
-          <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-cyan-400/6 rounded-full blur-[80px] animate-gradient-3" />
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/hero.webp"
+            alt="Modern curved glass railing staircase"
+            fill
+            className="object-cover"
+            style={{ objectPosition: "55% center" }}
+            priority
+            quality={90}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
         </div>
-        {/* Grid pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: `linear-gradient(#00d4ff 1px, transparent 1px), linear-gradient(90deg, #00d4ff 1px, transparent 1px)`,
-          backgroundSize: '80px 80px',
-        }} />
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 sm:py-40 lg:py-48 w-full">
-          <div className="max-w-4xl">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-40 lg:py-48 w-full">
+          <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 glass border border-accent/20 rounded-full px-5 py-2 mb-8">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               <span className="text-accent text-xs font-semibold uppercase tracking-[0.2em]">MA &middot; NH &middot; ME &middot; RI &middot; FL</span>
             </div>
 
             <h1 className="font-display text-5xl sm:text-6xl lg:text-8xl font-bold text-white leading-[0.95] tracking-tight">
-              Railings That
+              Modern or
+              <br />
+              Traditional.
               <br />
               <span className="bg-gradient-to-r from-accent via-cyan-300 to-accent bg-clip-text text-transparent">
-                Define
-              </span>{" "}
-              Your Space
+                You Choose,
+              </span>
+              <br />
+              We Build.
             </h1>
 
-            <p className="mt-8 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Ultra-modern glass, cable &amp; iron railings — custom designed,
+            <p className="mt-8 text-lg sm:text-xl text-white/70 leading-relaxed max-w-2xl">
+              Custom glass, cable &amp; iron railings — designed to your vision,
               precision fabricated, and professionally installed across
               New England &amp; Florida.
             </p>
@@ -208,7 +215,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-16 flex items-center gap-6 text-sm text-muted-foreground">
+            <div className="mt-16 flex items-center gap-6 text-sm text-white/60">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
