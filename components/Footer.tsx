@@ -41,9 +41,9 @@ export function Footer() {
               <Image
                 src="/logo-header.png"
                 alt="Alpha Railings"
-                width={190}
-                height={50}
-                className="h-9 w-auto"
+                width={280}
+                height={74}
+                className="h-14 w-auto"
               />
             </Link>
             <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-sm">
