@@ -28,7 +28,7 @@ export function Header() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="bg-primary/80 backdrop-blur-xl sticky top-0 z-50 border-b border-white/5">
+    <header className="bg-primary sticky top-0 z-50 border-b border-white/5">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="hidden lg:flex items-center justify-between py-2 border-b border-white/5 text-xs text-muted-foreground">
           <div className="flex items-center gap-6">
@@ -76,7 +76,7 @@ export function Header() {
                 <div
                   onMouseEnter={() => setServicesOpen(true)}
                   onMouseLeave={() => setServicesOpen(false)}
-                  className="absolute top-full left-0 mt-1 w-72 glass rounded-xl border border-white/10 shadow-2xl py-2 z-50"
+                  className="absolute top-full left-0 mt-1 w-72 bg-[#111111] rounded-xl border border-white/10 shadow-2xl py-2 z-50"
                 >
                   {services.map((service) => (
                     <Link
