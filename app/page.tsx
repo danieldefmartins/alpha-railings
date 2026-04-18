@@ -172,22 +172,22 @@ export default function Home() {
             alt="Modern curved glass railing staircase"
             fill
             className="object-cover"
-            style={{ objectPosition: "55% center" }}
+            style={{ objectPosition: "center center" }}
             priority
             quality={90}
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/70 to-primary/40" />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/50 to-primary/20 sm:from-primary/95 sm:via-primary/70 sm:to-primary/40" />
+          <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-primary/20 sm:to-primary/30" />
         </div>
 
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-40 lg:py-48 w-full">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-40 lg:py-48 w-full">
           <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 glass border border-accent/20 rounded-full px-5 py-2 mb-8">
+            <div className="inline-flex items-center gap-2 glass border border-accent/20 rounded-full px-3 py-1.5 sm:px-5 sm:py-2 mb-5 sm:mb-8">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
               <span className="text-accent text-xs font-semibold uppercase tracking-[0.2em]">MA &middot; NH &middot; ME &middot; RI &middot; FL</span>
             </div>
 
-            <h1 className="font-display text-5xl sm:text-6xl lg:text-8xl font-bold text-white leading-[0.95] tracking-tight">
+            <h1 className="font-display text-2xl sm:text-5xl lg:text-6xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight">
               Modern or
               <br />
               Traditional.
@@ -199,22 +199,22 @@ export default function Home() {
               We Build.
             </h1>
 
-            <p className="mt-8 text-lg sm:text-xl text-white/70 leading-relaxed max-w-2xl">
+            <p className="mt-5 sm:mt-8 text-sm sm:text-xl text-white/70 leading-relaxed max-w-2xl">
               Custom glass, cable &amp; iron railings — designed to your vision,
               precision fabricated, and professionally installed across
               New England &amp; Florida.
             </p>
 
-            <div className="mt-12 flex flex-col sm:flex-row gap-4">
+            <div className="mt-6 sm:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href="/quote"
-                className="group relative bg-accent text-primary px-10 py-4 rounded-xl font-display font-bold text-base transition-all hover:shadow-[0_0_40px_rgba(0,212,255,0.3)] text-center"
+                className="group relative bg-accent text-primary px-5 sm:px-8 lg:px-10 py-2.5 sm:py-4 rounded-xl font-display font-bold text-sm sm:text-base transition-all hover:shadow-[0_0_40px_rgba(0,212,255,0.3)] text-center"
               >
                 Get a Free Quote
               </Link>
               <Link
                 href="/portfolio"
-                className="group glass border border-white/10 hover:border-accent/30 text-white px-10 py-4 rounded-xl font-display font-semibold text-base transition-all text-center hover:text-accent"
+                className="group glass border border-white/10 hover:border-accent/30 text-white px-5 sm:px-8 lg:px-10 py-2.5 sm:py-4 rounded-xl font-display font-semibold text-sm sm:text-base transition-all text-center hover:text-accent"
               >
                 View Our Work
                 <svg className="inline-block w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -223,7 +223,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-16 flex items-center gap-6 text-sm text-white/60">
+            <div className="mt-8 sm:mt-16 hidden sm:flex items-center gap-6 text-sm text-white/60">
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
@@ -253,7 +253,7 @@ export default function Home() {
       <section className="relative -mt-20 z-10 pb-8">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="glass rounded-2xl border border-border p-8 sm:p-10 glow-accent">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="font-display text-3xl sm:text-5xl font-bold bg-gradient-to-b from-accent to-cyan-300 bg-clip-text text-transparent">
@@ -275,7 +275,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
             <div>
               <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">What We Build</span>
-              <h2 className="mt-3 font-display text-3xl sm:text-5xl font-bold text-foreground tracking-tight">
+              <h2 className="mt-3 font-display text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground tracking-tight">
                 Premium Railings &amp;<br className="hidden sm:block" /> Custom Metalwork
               </h2>
             </div>
@@ -292,7 +292,7 @@ export default function Home() {
               <Link
                 key={service.title}
                 href={service.href}
-                className="group relative bg-card rounded-2xl p-6 border border-border hover:border-accent/20 transition-all duration-500 overflow-hidden"
+                className="group relative bg-card rounded-2xl p-4 sm:p-6 border border-border hover:border-accent/20 transition-all duration-500 overflow-hidden"
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
                 <div className="relative">
@@ -334,7 +334,7 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">The Alpha Difference</span>
-            <h2 className="mt-3 font-display text-3xl sm:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="mt-3 font-display text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground tracking-tight">
               Why Clients Choose{" "}
               <span className="bg-gradient-to-r from-accent to-cyan-300 bg-clip-text text-transparent">Alpha</span>
             </h2>
@@ -366,7 +366,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Choose Your Material</span>
-            <h2 className="mt-3 font-display text-3xl sm:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="mt-3 font-display text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground tracking-tight">
               Glass vs Cable vs Iron
             </h2>
             <p className="mt-4 text-muted-foreground text-lg">
@@ -377,7 +377,7 @@ export default function Home() {
             {materials.map((material, idx) => (
               <div
                 key={material.name}
-                className={`relative rounded-2xl p-8 border transition-all duration-300 hover:translate-y-[-4px] ${
+                className={`relative rounded-2xl p-4 sm:p-6 lg:p-8 border transition-all duration-300 hover:translate-y-[-4px] ${
                   idx === 0
                     ? "bg-gradient-to-b from-accent/10 to-card border-accent/20 glow-accent"
                     : "bg-card border-border hover:border-accent/20"
@@ -440,7 +440,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
             <div>
               <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Our Work</span>
-              <h2 className="mt-3 font-display text-3xl sm:text-5xl font-bold text-foreground tracking-tight">
+              <h2 className="mt-3 font-display text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground tracking-tight">
                 Featured Projects
               </h2>
             </div>
@@ -454,12 +454,12 @@ export default function Home() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              { title: "Curved Glass Railing", location: "Commercial Office", type: "Glass", h: "h-80", image: "/photos/curved-glass-railing-office.jpg" },
-              { title: "Iron Staircase", location: "Residential, NH", type: "Iron", h: "h-64", image: "/photos/iron-staircase-chandelier.jpg" },
-              { title: "Glass Railing", location: "Residential, MA", type: "Glass", h: "h-80", image: "/photos/glass-railing-staircase.jpg" },
-              { title: "Floating Staircase", location: "Residential, MA", type: "Cable", h: "h-64", image: "/photos/floating-cable-staircase.jpg" },
-              { title: "Glass Partitions", location: "Commercial Office", type: "Glass", h: "h-80", image: "/photos/glass-partition-office.jpg" },
-              { title: "Cable Railing", location: "Residential Exterior", type: "Cable", h: "h-64", image: "/photos/exterior-cable-railing.jpg" },
+              { title: "Curved Glass Railing", location: "Commercial Office", type: "Glass", h: "h-56 sm:h-64 lg:h-80", image: "/photos/curved-glass-railing-office.jpg" },
+              { title: "Iron Staircase", location: "Residential, NH", type: "Iron", h: "h-48 sm:h-56 lg:h-64", image: "/photos/iron-staircase-chandelier.jpg" },
+              { title: "Glass Railing", location: "Residential, MA", type: "Glass", h: "h-56 sm:h-64 lg:h-80", image: "/photos/glass-railing-staircase.jpg" },
+              { title: "Floating Staircase", location: "Residential, MA", type: "Cable", h: "h-48 sm:h-56 lg:h-64", image: "/photos/floating-cable-staircase.jpg" },
+              { title: "Glass Partitions", location: "Commercial Office", type: "Glass", h: "h-56 sm:h-64 lg:h-80", image: "/photos/glass-partition-office.jpg" },
+              { title: "Cable Railing", location: "Residential Exterior", type: "Cable", h: "h-48 sm:h-56 lg:h-64", image: "/photos/exterior-cable-railing.jpg" },
             ].map((project) => (
               <div
                 key={project.title}
@@ -489,13 +489,13 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20">
             <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Client Reviews</span>
-            <h2 className="mt-3 font-display text-3xl sm:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="mt-3 font-display text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground tracking-tight">
               Trusted by Homeowners &amp; Businesses
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {testimonials.map((t) => (
-              <div key={t.name} className="glass rounded-2xl p-8 border border-border">
+              <div key={t.name} className="glass rounded-2xl p-4 sm:p-6 lg:p-8 border border-border">
                 <div className="flex gap-1 mb-6">
                   {[...Array(t.rating)].map((_, i) => (
                     <svg key={i} className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
@@ -528,7 +528,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-r from-accent/20 via-accent/5 to-transparent" />
             <div className="absolute inset-0 bg-card" />
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-accent/40 via-accent/10 to-transparent" />
-            <div className="relative p-10 sm:p-16 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
+            <div className="relative p-6 sm:p-10 lg:p-16 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
               <div className="max-w-2xl">
                 <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Financing Available</span>
                 <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
@@ -539,10 +539,10 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">
-                <Link href="/financing" className="bg-accent text-primary px-8 py-4 rounded-xl font-display font-bold text-base transition-all hover:shadow-[0_0_40px_rgba(0,212,255,0.3)] text-center">
+                <Link href="/financing" className="bg-accent text-primary px-5 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-xl font-display font-bold text-base transition-all hover:shadow-[0_0_40px_rgba(0,212,255,0.3)] text-center">
                   Learn More
                 </Link>
-                <Link href="/quote" className="border border-border text-foreground px-8 py-4 rounded-xl font-display font-semibold text-base transition-colors hover:border-accent/30 hover:text-accent text-center">
+                <Link href="/quote" className="border border-border text-foreground px-5 sm:px-6 lg:px-8 py-3 sm:py-4 rounded-xl font-display font-semibold text-base transition-colors hover:border-accent/30 hover:text-accent text-center">
                   Get a Quote
                 </Link>
               </div>
@@ -589,7 +589,7 @@ export default function Home() {
       {/* Final CTA */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-accent/8 rounded-full blur-[150px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-72 sm:w-96 lg:w-[600px] h-72 sm:h-96 lg:h-[600px] bg-accent/8 rounded-full blur-[150px]" />
         </div>
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-display text-4xl sm:text-6xl font-bold text-foreground tracking-tight leading-[1.1]">
@@ -606,13 +606,13 @@ export default function Home() {
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/quote"
-              className="bg-accent text-primary px-12 py-5 rounded-xl font-display font-bold text-lg transition-all hover:shadow-[0_0_60px_rgba(0,212,255,0.3)]"
+              className="bg-accent text-primary px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-5 rounded-xl font-display font-bold text-lg transition-all hover:shadow-[0_0_60px_rgba(0,212,255,0.3)]"
             >
               Get a Free Quote
             </Link>
             <a
               href="tel:+17543182099"
-              className="glass border border-white/10 hover:border-accent/30 text-white px-12 py-5 rounded-xl font-display font-semibold text-lg transition-all hover:text-accent"
+              className="glass border border-white/10 hover:border-accent/30 text-white px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-5 rounded-xl font-display font-semibold text-lg transition-all hover:text-accent"
             >
               Call (754) 318-2099
             </a>

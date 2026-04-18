@@ -155,7 +155,7 @@ export function ServicePage({
       {/* Overview + Features Grid */}
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-start">
             <div>
               <span className="text-accent font-display font-semibold text-sm uppercase tracking-widest">
                 Overview

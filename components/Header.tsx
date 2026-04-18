@@ -76,7 +76,7 @@ export function Header() {
                 <div
                   onMouseEnter={() => setServicesOpen(true)}
                   onMouseLeave={() => setServicesOpen(false)}
-                  className="absolute top-full left-0 mt-1 w-72 bg-[#111111] rounded-xl border border-white/10 shadow-2xl py-2 z-50"
+                  className="absolute top-full left-0 mt-1 w-64 sm:w-72 bg-[#111111] rounded-xl border border-white/10 shadow-2xl py-2 z-50"
                 >
                   {services.map((service) => (
                     <Link
