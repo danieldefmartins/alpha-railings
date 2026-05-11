@@ -5,14 +5,14 @@ import Link from "next/link";
 import { useState } from "react";
 
 const services = [
+  { name: "Custom Staircases", href: "/services/staircases" },
   { name: "Glass Railings", href: "/services/glass-railings" },
   { name: "Cable Railings", href: "/services/cable-railings" },
   { name: "Iron Railings & Handrails", href: "/services/iron-railings" },
-  { name: "Staircases & Spiral Stairs", href: "/services/staircases" },
   { name: "Gates & Fences", href: "/services/gates-fences" },
   { name: "Shower Doors", href: "/services/shower-doors" },
   { name: "Glass Partitions", href: "/services/glass-partitions" },
-  { name: "Commercial Railings", href: "/services/commercial-railings" },
+  { name: "Commercial Projects", href: "/services/commercial-railings" },
 ];
 
 const navigation = [
@@ -44,7 +44,7 @@ export function Header() {
           </div>
           <div className="flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse" />
-            <span>Licensed &amp; Insured — MA, NH, ME, RI &amp; FL</span>
+            <span>Licensed &amp; Insured — Ships Nationwide</span>
           </div>
         </div>
 

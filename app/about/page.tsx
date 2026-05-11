@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About Us | Alpha Railings - Premium Railing Fabrication & Installation",
+  title: "About Us | Alpha Railings - Custom Staircases & Premium Railings",
   description:
-    "Alpha Railings started in South Florida and expanded to New England. We specialize in modern glass, cable, and iron railings with 15+ years of premium craftsmanship across 5 states.",
+    "Alpha Railings specializes in custom staircases and premium railings. 15+ years of craftsmanship, in-house fabrication, shipped nationwide.",
   openGraph: {
     title: "About Us | Alpha Railings",
     description:
-      "Built on innovation, driven by precision. 15+ years of premium railing fabrication and installation across MA, NH, ME, RI & FL.",
+      "Built on innovation, driven by precision. 15+ years crafting custom staircases and premium railings — shipped nationwide.",
     url: "https://alpharailings.com/about",
   },
 };
@@ -60,7 +60,7 @@ const values = [
 const stats = [
   { value: "2,500+", label: "Projects Completed" },
   { value: "15+", label: "Years Experience" },
-  { value: "5", label: "States Served" },
+  { value: "50", label: "States Shipped To" },
   { value: "100%", label: "Custom Built" },
 ];
 
@@ -79,8 +79,8 @@ export default function AboutPage() {
             <span className="text-accent">Driven by Precision</span>
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            From South Florida to New England, we have built our reputation on
-            delivering premium railings that transform spaces.
+            From custom staircases to premium railings, we have built our reputation on
+            delivering craftsmanship that transforms spaces — shipped nationwide.
           </p>
         </div>
       </section>
@@ -94,31 +94,31 @@ export default function AboutPage() {
                 Our Story
               </span>
               <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
-                From South Florida to{" "}
-                <span className="text-accent">New England</span>
+                From Custom Shop to{" "}
+                <span className="text-accent">Nationwide</span>
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Alpha Railings was founded in South Florida with a simple
-                  mission: deliver premium-quality railings that combine modern
-                  design with uncompromising craftsmanship. What started as a
-                  small custom fabrication shop quickly grew as word spread about
+                  Alpha Railings was founded with a simple mission: build
+                  stunning custom staircases and premium railings that combine
+                  modern design with uncompromising craftsmanship. What started
+                  as a small fabrication shop quickly grew as word spread about
                   our commitment to precision and quality.
                 </p>
                 <p>
-                  As demand grew, we expanded our operations to New England,
-                  bringing the same level of excellence to Massachusetts, New
-                  Hampshire, Maine, and Rhode Island. Today, we serve clients
-                  across five states with a full range of glass, cable, and iron
-                  railing systems.
+                  As demand grew, we expanded from local installations to
+                  shipping custom staircases and railings across the entire
+                  United States. Today, we serve clients nationwide — from
+                  floating staircases and spiral stairs to frameless glass,
+                  cable, and iron railing systems.
                 </p>
                 <p>
-                  Our focus on modern materials sets us apart. We specialize in
-                  frameless glass, stainless steel cable, and custom iron
-                  solutions — each engineered for durability, code compliance,
-                  and visual impact. Every project is custom-designed and
-                  fabricated in-house, ensuring quality control from start to
-                  finish.
+                  Our focus on modern materials and in-house fabrication sets us
+                  apart. Every staircase and railing is designed, engineered,
+                  and built in our own shop — no outsourcing, no middlemen.
+                  Whether it is a dramatic floating staircase or sleek glass
+                  railings, every project is crafted for durability, code
+                  compliance, and visual impact.
                 </p>
               </div>
             </div>
@@ -203,8 +203,8 @@ export default function AboutPage() {
             Ready to Work With Us?
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Get a free, no-obligation quote for your railing project. Custom
-            designs, premium materials, professional installation.
+            Get a free, no-obligation quote for your staircase or railing
+            project. Custom designs, premium materials, shipped nationwide.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Link

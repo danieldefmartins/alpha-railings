@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const serviceLinks = [
+  { name: "Custom Staircases", href: "/services/staircases" },
   { name: "Glass Railings", href: "/services/glass-railings" },
   { name: "Cable Railings", href: "/services/cable-railings" },
   { name: "Iron Railings", href: "/services/iron-railings" },
-  { name: "Staircases", href: "/services/staircases" },
   { name: "Gates & Fences", href: "/services/gates-fences" },
   { name: "Shower Doors", href: "/services/shower-doors" },
   { name: "Glass Partitions", href: "/services/glass-partitions" },
-  { name: "Commercial Railings", href: "/services/commercial-railings" },
+  { name: "Commercial Projects", href: "/services/commercial-railings" },
 ];
 
 const companyLinks = [
@@ -47,9 +47,9 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 text-muted-foreground text-sm leading-relaxed max-w-sm">
-              Premium glass, cable &amp; iron railings. Custom fabrication and
-              professional installation serving Massachusetts, New Hampshire,
-              Maine, Rhode Island &amp; Florida.
+              Custom staircases, glass, cable &amp; iron railings. In-house
+              fabrication and nationwide shipping. Professional installation
+              available in select regions.
             </p>
             <div className="mt-6 flex items-center gap-4">
               <a href="tel:+17543182099" className="inline-flex items-center gap-2 bg-accent/10 border border-accent/20 rounded-full px-4 py-2 text-accent text-sm font-semibold hover:bg-accent/20 transition-colors">
@@ -117,7 +117,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Alpha Railings. All rights reserved.
           </p>
           <p className="text-muted-foreground/50 text-xs">
-            Licensed &amp; Insured | MA, NH, ME, RI &amp; FL
+            Licensed &amp; Insured | Ships Nationwide
           </p>
         </div>
       </div>

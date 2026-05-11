@@ -3,6 +3,13 @@ import Link from "next/link";
 
 const services = [
   {
+    title: "Custom Staircases",
+    description: "Floating, spiral, and straight staircases. Steel, glass, and mixed materials. Ships nationwide.",
+    href: "/services/staircases",
+    gradient: "from-violet-500/20 to-purple-500/20",
+    image: "/photos/railing-project-1.jpg",
+  },
+  {
     title: "Glass Railings",
     description: "Frameless and semi-frameless tempered glass. Sleek, modern, unobstructed views.",
     href: "/services/glass-railings",
@@ -22,13 +29,6 @@ const services = [
     href: "/services/iron-railings",
     gradient: "from-amber-500/20 to-orange-500/20",
     image: "/photos/iron-staircase-chandelier.jpg",
-  },
-  {
-    title: "Staircases",
-    description: "Floating, spiral, and straight staircases. Steel, glass, and mixed materials.",
-    href: "/services/staircases",
-    gradient: "from-violet-500/20 to-purple-500/20",
-    image: "/photos/railing-project-1.jpg",
   },
   {
     title: "Gates & Fences",
@@ -53,7 +53,7 @@ const services = [
   },
   {
     title: "Commercial",
-    description: "ADA-compliant railing systems for offices, retail, and multi-family buildings.",
+    description: "ADA-compliant railing and staircase systems for offices, retail, and multi-family buildings.",
     href: "/services/commercial-railings",
     gradient: "from-yellow-500/20 to-amber-500/20",
     image: "/photos/commercial-glass-staircase.jpg",
@@ -63,7 +63,7 @@ const services = [
 const stats = [
   { value: "2,500+", label: "Projects Delivered" },
   { value: "15+", label: "Years of Excellence" },
-  { value: "5", label: "States Covered" },
+  { value: "50", label: "States Shipped To" },
   { value: "100%", label: "Custom Fabricated" },
 ];
 
@@ -111,8 +111,8 @@ const whyUs = [
     ),
   },
   {
-    title: "Licensed in 5 States",
-    description: "Fully licensed and insured across Massachusetts, New Hampshire, Maine, Rhode Island, and Florida.",
+    title: "Nationwide Shipping",
+    description: "We ship custom staircases and railings to all 50 states. Professional installation available in select regions.",
     icon: (
       <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -184,25 +184,25 @@ export default function Home() {
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 glass border border-accent/20 rounded-full px-3 py-1.5 sm:px-5 sm:py-2 mb-5 sm:mb-8">
               <span className="h-2 w-2 rounded-full bg-accent animate-pulse" />
-              <span className="text-accent text-xs font-semibold uppercase tracking-[0.2em]">MA &middot; NH &middot; ME &middot; RI &middot; FL</span>
+              <span className="text-accent text-xs font-semibold uppercase tracking-[0.2em]">Custom Built &middot; Ships Nationwide</span>
             </div>
 
             <h1 className="font-display text-2xl sm:text-5xl lg:text-6xl xl:text-8xl font-bold text-white leading-[0.95] tracking-tight">
-              Modern or
+              Custom
               <br />
-              Traditional.
+              Staircases
               <br />
               <span className="bg-gradient-to-r from-accent via-cyan-300 to-accent bg-clip-text text-transparent">
-                You Choose,
+                &amp; Railings.
               </span>
               <br />
-              We Build.
+              Built to Order.
             </h1>
 
             <p className="mt-5 sm:mt-8 text-sm sm:text-xl text-white/70 leading-relaxed max-w-2xl">
-              Custom glass, cable &amp; iron railings — designed to your vision,
-              precision fabricated, and professionally installed across
-              New England &amp; Florida.
+              Custom staircases, glass, cable &amp; iron railings — designed to your vision,
+              precision fabricated in-house, and shipped nationwide.
+              Professional installation available.
             </p>
 
             <div className="mt-6 sm:mt-12 flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -228,7 +228,7 @@ export default function Home() {
                 <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                 </svg>
-                Licensed &amp; Insured
+                Ships Nationwide
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -240,7 +240,7 @@ export default function Home() {
                 <svg className="w-4 h-4 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 12.75 6 6 9-13.5" />
                 </svg>
-                Financing Available
+                Licensed &amp; Insured
               </div>
             </div>
           </div>
@@ -276,7 +276,7 @@ export default function Home() {
             <div>
               <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">What We Build</span>
               <h2 className="mt-3 font-display text-2xl sm:text-3xl lg:text-5xl font-bold text-foreground tracking-tight">
-                Premium Railings &amp;<br className="hidden sm:block" /> Custom Metalwork
+                Custom Staircases &amp;<br className="hidden sm:block" /> Premium Railings
               </h2>
             </div>
             <Link href="/services/glass-railings" className="text-accent font-semibold inline-flex items-center gap-2 hover:gap-3 transition-all text-sm shrink-0">
@@ -532,10 +532,10 @@ export default function Home() {
               <div className="max-w-2xl">
                 <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Financing Available</span>
                 <h2 className="mt-3 font-display text-3xl sm:text-4xl font-bold text-foreground tracking-tight">
-                  Premium Railings,<br />Affordable Payments
+                  Premium Staircases &amp; Railings,<br />Affordable Payments
                 </h2>
                 <p className="mt-4 text-muted-foreground text-lg">
-                  Low monthly payments. Quick approval. No hidden fees. Get the railings you want today.
+                  Low monthly payments. Quick approval. No hidden fees. Get the staircase you want today.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 shrink-0">
@@ -555,10 +555,13 @@ export default function Home() {
       <section className="py-24 bg-secondary">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Where We Work</span>
+            <span className="text-accent font-display font-semibold text-sm uppercase tracking-[0.2em]">Where We Ship</span>
             <h2 className="mt-3 font-display text-2xl sm:text-4xl font-bold text-foreground tracking-tight">
-              5 States. One Standard of Excellence.
+              Nationwide Shipping. One Standard of Excellence.
             </h2>
+            <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
+              We ship custom staircases and railings to all 50 states. On-site installation available in these regions.
+            </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-3 max-w-4xl mx-auto">
             {serviceAreas.map((area) => (
@@ -600,8 +603,8 @@ export default function Home() {
             Your Space?
           </h2>
           <p className="mt-6 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Get a free, no-obligation quote. Custom designs, premium materials,
-            professional installation across 5 states.
+            Get a free, no-obligation quote. Custom staircases and railings,
+            premium materials, shipped nationwide.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <Link

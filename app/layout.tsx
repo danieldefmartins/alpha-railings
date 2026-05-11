@@ -19,27 +19,26 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Alpha Railings | Premium Glass, Cable & Iron Railings | MA, NH, ME, RI, FL",
+  title: "Alpha Railings | Custom Staircases & Premium Railings | Ships Nationwide",
   description:
-    "Ultra-modern glass railings, cable railings, iron railings, staircases, gates, shower doors & commercial railings. Premium fabrication and installation across Massachusetts, New Hampshire, Maine, Rhode Island & Florida.",
+    "Custom staircases, glass railings, cable railings, iron railings, gates, shower doors & commercial projects. Premium in-house fabrication — shipped nationwide across all 50 states.",
   keywords: [
+    "custom staircases",
+    "floating staircases",
+    "spiral staircases",
     "glass railings",
     "cable railings",
     "iron railings",
-    "custom staircases",
-    "shower doors",
-    "glass partitions",
-    "commercial railings",
+    "staircase fabrication",
+    "nationwide shipping",
+    "custom staircase design",
     "railing installation",
-    "Massachusetts",
-    "Florida",
-    "New Hampshire",
   ],
   metadataBase: new URL("https://alpharailings.com"),
   openGraph: {
-    title: "Alpha Railings | Premium Railings & Ironworks",
+    title: "Alpha Railings | Custom Staircases & Premium Railings",
     description:
-      "Ultra-modern glass, cable & iron railings. Premium fabrication and installation across MA, NH, ME, RI & FL.",
+      "Custom staircases, glass, cable & iron railings. In-house fabrication, shipped nationwide.",
     url: "https://alpharailings.com",
     siteName: "Alpha Railings",
     locale: "en_US",
@@ -47,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alpha Railings | Premium Railings & Ironworks",
+    title: "Alpha Railings | Custom Staircases & Premium Railings",
     description:
-      "Ultra-modern glass, cable & iron railings. MA, NH, ME, RI & FL.",
+      "Custom staircases, glass, cable & iron railings. Ships nationwide.",
   },
   icons: {
     icon: "/icon.png",
@@ -77,7 +76,7 @@ export default function RootLayout({
               "@type": "LocalBusiness",
               name: "Alpha Railings",
               description:
-                "Premium glass, cable & iron railings. Custom fabrication and professional installation.",
+                "Custom staircases, glass, cable & iron railings. In-house fabrication shipped nationwide.",
               url: "https://alpharailings.com",
               telephone: "+1-754-318-2099",
               email: "support@alpharailings.com",
@@ -86,13 +85,10 @@ export default function RootLayout({
                 addressRegion: "MA",
                 addressCountry: "US",
               },
-              areaServed: [
-                { "@type": "State", name: "Massachusetts" },
-                { "@type": "State", name: "New Hampshire" },
-                { "@type": "State", name: "Maine" },
-                { "@type": "State", name: "Rhode Island" },
-                { "@type": "State", name: "Florida" },
-              ],
+              areaServed: {
+                "@type": "Country",
+                name: "United States",
+              },
               openingHours: "Mo-Fr 07:00-18:00",
               priceRange: "$$$",
             }),
