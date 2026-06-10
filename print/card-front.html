@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #050505; margin: 0; font-family: 'Space Grotesk', sans-serif; }
+  .card { width: 100vw; height: 100vh; background: #050505; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; overflow: hidden; }
+  .bar-top { position: absolute; top: 0; left: 0; right: 0; height: 8px; background: linear-gradient(90deg, #008fb3, #00d4ff, #40e0ff, #00d4ff, #008fb3); }
+  .bar-bot { position: absolute; bottom: 0; left: 0; right: 0; height: 8px; background: linear-gradient(90deg, #008fb3, #00d4ff, #40e0ff, #00d4ff, #008fb3); }
+  .glow { position: absolute; top: 40%; left: 50%; transform: translate(-50%,-50%); width: 900px; height: 500px; background: radial-gradient(ellipse, rgba(0,212,255,0.06) 0%, transparent 70%); }
+  .corner { position: absolute; width: 60px; height: 60px; border-color: rgba(0,212,255,0.12); border-style: solid; border-width: 0; }
+  .corner.tl { top: 40px; left: 40px; border-top-width: 1px; border-left-width: 1px; }
+  .corner.br { bottom: 40px; right: 40px; border-bottom-width: 1px; border-right-width: 1px; }
+  .logo { height: 180px; width: auto; margin-bottom: 40px; position: relative; z-index: 1; }
+  .tagline { font-size: 24px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #00d4ff; position: relative; z-index: 1; }
+</style></head><body>
+<div class="card">
+  <div class="bar-top"></div><div class="bar-bot"></div><div class="glow"></div>
+  <div class="corner tl"></div><div class="corner br"></div>
+  <img src="logo.png" alt="Alpha Railings" class="logo">
+  <p class="tagline">Premium Glass, Cable &amp; Iron Railings</p>
+</div>
+</body></html>
