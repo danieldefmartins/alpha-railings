@@ -135,7 +135,7 @@ export function ServicePage({
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link
-                href="/quote"
+                href={`/quote?service=${encodeURIComponent(badge)}`}
                 className="bg-accent hover:bg-accent/90 text-primary px-8 py-4 rounded-lg font-display font-bold text-base transition-all hover:shadow-lg hover:shadow-accent/25 text-center"
               >
                 Get a Free Quote
@@ -301,7 +301,7 @@ export function ServicePage({
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="/quote"
+                href={`/quote?service=${encodeURIComponent(badge)}`}
                 className="bg-accent hover:bg-accent/90 text-primary px-8 py-4 rounded-lg font-display font-bold text-base transition-all hover:shadow-lg hover:shadow-accent/25"
               >
                 Get a Free Quote

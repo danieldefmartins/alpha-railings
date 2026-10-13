@@ -1,0 +1,28 @@
+{
+  "name": "Website — Free Quote",
+  "slug": "alpha-railings-quote",
+  "description": "Free quote and contact requests from alpharailings.com (/quote, /contact; service and area pages link here with ?service= / ?area=).",
+  "published": true,
+  "fields": [
+    { "id": "first_name", "label": "First name", "type": "text", "required": true, "step": 1, "mapping": "first_name", "options": [], "condition": null },
+    { "id": "last_name", "label": "Last name", "type": "text", "required": false, "step": 1, "mapping": "last_name", "options": [], "condition": null },
+    { "id": "phone", "label": "Mobile phone", "type": "phone", "required": true, "step": 1, "mapping": "phone", "options": [], "condition": null },
+    { "id": "email", "label": "Email", "type": "email", "required": false, "step": 1, "mapping": "email", "options": [], "condition": null },
+    { "id": "location", "label": "City & state or ZIP", "type": "text", "required": true, "step": 1, "mapping": null, "options": [], "condition": null },
+    {
+      "id": "project_type", "label": "Project type", "type": "select", "required": true, "step": 1, "mapping": null,
+      "options": ["Custom Staircase", "Glass Railings", "Cable Railings", "Iron Railings & Handrails", "Gates & Fences", "Shower Doors", "Glass Partitions", "Commercial Project", "Other / Not sure yet"],
+      "condition": null
+    },
+    { "id": "message", "label": "Project details", "type": "textarea", "required": false, "step": 1, "mapping": null, "options": [], "condition": null },
+    { "id": "source_page", "label": "Website page", "type": "text", "required": false, "step": 1, "mapping": null, "options": [], "condition": null },
+    { "id": "photo_1", "label": "Photo 1", "type": "file", "required": false, "step": 1, "mapping": null, "options": [], "condition": null },
+    { "id": "photo_2", "label": "Photo 2", "type": "file", "required": false, "step": 1, "mapping": null, "options": [], "condition": null },
+    { "id": "photo_3", "label": "Photo 3", "type": "file", "required": false, "step": 1, "mapping": null, "options": [], "condition": null }
+  ],
+  "consentText": "By checking this box, I agree to receive text messages from Alpha Railings about my estimate, appointments and project updates. Message frequency varies. Message & data rates may apply. Reply STOP to opt out, HELP for help. See our Privacy Policy and Terms.",
+  "consentRequired": false,
+  "thankYou": "Thanks — we received your quote request. Our team will reach out within 1 business day.",
+  "redirect": "",
+  "turnstile": false
+}

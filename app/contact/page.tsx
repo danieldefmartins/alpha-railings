@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { QuoteForm } from "@/components/QuoteForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Alpha Railings - Get in Touch Today",
@@ -110,32 +111,16 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Form Placeholder + Service Areas */}
+      {/* Contact Form + Service Areas */}
       <section className="py-24 sm:py-32 bg-secondary">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Form Placeholder */}
+            {/* Contact Form (360 CRM) */}
             <div>
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-6">
                 Send Us a Message
               </h2>
-              <div className="bg-card rounded-2xl border border-border border-dashed p-12 text-center">
-                <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                  </svg>
-                </div>
-                <p className="font-display text-lg font-bold text-foreground mb-2">
-                  Contact Form Coming Soon
-                </p>
-                <p className="text-muted-foreground text-sm max-w-sm mx-auto">
-                  Our contact form is being integrated with our scheduling
-                  system. In the meantime, please call or email us directly.
-                </p>
-                <p className="text-xs text-muted-foreground mt-4 italic">
-                  GHL form integration placeholder
-                </p>
-              </div>
+              <QuoteForm title="" submitLabel="Send Message" />
             </div>
 
             {/* Service Areas */}

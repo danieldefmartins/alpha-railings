@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { QuoteForm } from "@/components/QuoteForm";
 
 export const metadata: Metadata = {
   title: "Get a Free Quote | Alpha Railings",
@@ -73,48 +73,12 @@ export default function QuotePage() {
       <section className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Left: Form Placeholder */}
-            <div>
+            {/* Left: Quote Form (360 CRM) */}
+            <div id="quote-form" className="scroll-mt-28">
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-foreground tracking-tight mb-6">
                 Request Your Quote
               </h2>
-              <div className="bg-card rounded-2xl border border-border border-dashed p-12 text-center min-h-[400px] flex flex-col items-center justify-center">
-                <div className="w-16 h-16 rounded-2xl bg-accent/10 border border-accent/20 flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-accent" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                  </svg>
-                </div>
-                <p className="font-display text-lg font-bold text-foreground mb-2">
-                  Quote Form Coming Soon
-                </p>
-                <p className="text-muted-foreground text-sm max-w-sm mx-auto mb-4">
-                  Our online quote form is being integrated with our project
-                  management system for a seamless experience.
-                </p>
-                <p className="text-xs text-muted-foreground italic">
-                  GHL form will be embedded here
-                </p>
-                <div className="mt-6 pt-6 border-t border-border w-full">
-                  <p className="text-foreground font-medium text-sm">
-                    In the meantime, call or email us directly:
-                  </p>
-                  <div className="mt-3 flex flex-col sm:flex-row gap-3 justify-center">
-                    <a
-                      href="tel:+17543182099"
-                      className="text-accent font-semibold text-sm hover:underline"
-                    >
-                      (754) 318-2099
-                    </a>
-                    <span className="text-muted-foreground hidden sm:block">|</span>
-                    <a
-                      href="mailto:support@alpharailings.com"
-                      className="text-accent font-semibold text-sm hover:underline"
-                    >
-                      support@alpharailings.com
-                    </a>
-                  </div>
-                </div>
-              </div>
+              <QuoteForm title="" />
             </div>
 
             {/* Right: Benefits + Call */}
