@@ -113,12 +113,23 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-muted-foreground/50 text-sm">
-            &copy; {new Date().getFullYear()} Alpha Railings. All rights reserved.
-          </p>
-          <p className="text-muted-foreground/50 text-xs">
-            Licensed &amp; Insured | Ships Nationwide
-          </p>
+          <div className="text-center sm:text-left">
+            <p className="text-muted-foreground/50 text-sm">
+              &copy; {new Date().getFullYear()} Alpha Railings. All rights reserved.
+            </p>
+            <p className="mt-1 text-muted-foreground/50 text-xs">Alpha Railings is operated by Alpha Railings LLC.</p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs">
+            <Link href="/privacy" className="text-muted-foreground hover:text-white transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="text-muted-foreground hover:text-white transition-colors">
+              Terms &amp; SMS Terms
+            </Link>
+            <span className="text-muted-foreground/50">
+              Licensed &amp; Insured | Ships Nationwide
+            </span>
+          </div>
         </div>
       </div>
     </footer>
