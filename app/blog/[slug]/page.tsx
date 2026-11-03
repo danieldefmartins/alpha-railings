@@ -1041,7 +1041,10 @@ export async function generateMetadata({
   return {
     title: `${article.title} | Alpha Railings Blog`,
     description: article.excerpt,
+    alternates: { canonical: `/blog/${article.slug}` },
     openGraph: {
+      siteName: "Alpha Railings",
+      images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
       title: article.title,
       description: article.excerpt,
       url: `https://alpharailings.com/blog/${article.slug}`,

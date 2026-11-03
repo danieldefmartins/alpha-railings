@@ -1,21 +1,20 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Alpha Railings - Our Work & Project Gallery",
+  title: "Portfolio | Alpha Railings - Railings & Staircases We've Built",
   description:
-    "Browse our portfolio of custom glass, cable, and iron railing installations. Residential and commercial projects across MA, NH, ME, RI & FL.",
+    "Photos of glass, cable and iron railings, custom staircases, gates and commercial glass work fabricated and installed by Alpha Railings.",
+  alternates: { canonical: "/portfolio" },
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
     title: "Portfolio | Alpha Railings",
-    description:
-      "Custom glass, cable, and iron railing installations. Residential and commercial projects across 5 states.",
+    description: "Glass, cable and iron railings, custom staircases and commercial glass projects by Alpha Railings.",
     url: "https://alpharailings.com/portfolio",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
   },
 };
 
-export default function PortfolioLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return <>{children}</>;
+export default function PortfolioLayout({ children }: { children: React.ReactNode }) {
+  return children;
 }

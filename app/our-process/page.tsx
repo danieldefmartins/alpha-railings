@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/our-process" },
   title: "Our Process | Alpha Railings - From Consultation to Installation",
   description:
     "Learn how Alpha Railings delivers premium railing projects in 6 steps: consultation, site visit, design & engineering, fabrication, installation, and final inspection.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Our Process | Alpha Railings",
     description:
       "From consultation to final inspection — our proven 6-step process ensures premium results on every project.",

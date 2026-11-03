@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/blog" },
   title: "Blog | Alpha Railings - Railing Tips, Trends & Guides",
   description:
     "Expert guides, design inspiration, and industry insights for glass, cable, and iron railings. Tips for homeowners, builders, and architects from Alpha Railings.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Blog | Alpha Railings",
     description:
       "Expert guides, design inspiration, and industry insights for glass, cable, and iron railings.",

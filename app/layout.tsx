@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Inter } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -43,12 +42,14 @@ export const metadata: Metadata = {
     siteName: "Alpha Railings",
     locale: "en_US",
     type: "website",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Alpha Railings | Custom Staircases & Premium Railings",
     description:
       "Custom staircases, glass, cable & iron railings. Ships nationwide.",
+    images: ["/og-default.jpg"],
   },
   icons: {
     icon: "/icon.png",
@@ -67,14 +68,16 @@ export default function RootLayout({
       className={`${spaceGrotesk.variable} ${inter.variable} h-full antialiased`}
     >
       <head>
-        <Script
-          id="schema-org"
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": "HomeAndConstructionBusiness",
+              "@id": "https://alpharailings.com/#business",
               name: "Alpha Railings",
+              logo: "https://alpharailings.com/logo-header.png",
+              image: "https://alpharailings.com/og-default.jpg",
               description:
                 "Custom staircases, glass, cable & iron railings. In-house fabrication shipped nationwide.",
               url: "https://alpharailings.com",

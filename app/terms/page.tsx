@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   description:
     "Terms of use for alpharailings.com, quotes and estimates, and the Alpha Railings text messaging (SMS) program.",
   alternates: { canonical: "https://alpharailings.com/terms" },
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Terms of Service & SMS Terms | Alpha Railings",
+    description: "Terms of use for alpharailings.com, quotes and estimates, and the Alpha Railings text messaging (SMS) program.",
+    url: "https://alpharailings.com/terms",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 export default function TermsPage() {

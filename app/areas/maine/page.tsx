@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/areas/maine" },
   title: "Glass & Iron Railings in Southern Maine | Alpha Railings",
   description:
     "Premium glass, cable & iron railings in Southern Maine. Custom fabrication and installation in Portland, Scarborough, Biddeford, and across the region. Free quotes.",
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Glass & Iron Railings in Southern Maine | Alpha Railings",
+    description: "Premium glass, cable & iron railings in Southern Maine. Custom fabrication and installation in Portland, Scarborough, Biddeford, and across the region. Free quotes.",
+    url: "https://alpharailings.com/areas/maine",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 const counties = [

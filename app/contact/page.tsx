@@ -3,10 +3,14 @@ import Link from "next/link";
 import { QuoteForm } from "@/components/QuoteForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact Us | Alpha Railings - Get in Touch Today",
   description:
     "Contact Alpha Railings for premium glass, cable, and iron railing installation. Serving MA, NH, ME, RI & FL. Call (754) 318-2099 or email support@alpharailings.com.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Contact Us | Alpha Railings",
     description:
       "Get in touch with Alpha Railings. Premium railing fabrication and installation across 5 states.",

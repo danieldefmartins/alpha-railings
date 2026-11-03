@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services/glass-railings" },
   title: "Glass Railings | Alpha Railings",
   description:
     "Premium frameless and semi-frameless tempered glass railings for balconies, decks, stairs, and indoor spaces. Custom glass railing installation in MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Glass Railings | Alpha Railings",
     description:
       "Premium frameless and semi-frameless tempered glass railings for balconies, decks, stairs, and indoor spaces.",

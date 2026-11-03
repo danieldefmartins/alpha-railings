@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/areas" },
   title: "Areas We Serve | Alpha Railings",
   description:
     "Alpha Railings serves Massachusetts, New Hampshire, Maine, Rhode Island & Florida with premium glass, cable & iron railing installation.",
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Areas We Serve | Alpha Railings",
+    description: "Alpha Railings serves Massachusetts, New Hampshire, Maine, Rhode Island & Florida with premium glass, cable & iron railing installation.",
+    url: "https://alpharailings.com/areas",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 const states = [

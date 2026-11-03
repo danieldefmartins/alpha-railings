@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services/glass-partitions" },
   title: "Glass Partitions | Alpha Railings",
   description:
     "Custom glass partitions for offices, homes, and commercial spaces. Frosted, clear, and switchable privacy options with sound dampening. Serving MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Glass Partitions | Alpha Railings",
     description:
       "Custom glass partitions for offices, homes, and commercial spaces. Frosted, clear, and switchable privacy options.",

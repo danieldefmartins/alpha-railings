@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services/gates-fences" },
   title: "Gates & Fences | Alpha Railings",
   description:
     "Custom driveway gates, pedestrian gates, and fencing with automation options. Iron, steel, and aluminum in modern and ornamental styles. Serving MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Gates & Fences | Alpha Railings",
     description:
       "Custom driveway gates, pedestrian gates, and fencing with automation options in iron, steel, and aluminum.",

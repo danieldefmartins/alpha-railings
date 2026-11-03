@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services/iron-railings" },
   title: "Iron Railings & Handrails | Alpha Railings",
   description:
     "Custom wrought iron railings and handrails. Ornamental and modern minimalist designs with durable powder coat finishes. Serving MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Iron Railings & Handrails | Alpha Railings",
     description:
       "Custom wrought iron railings and handrails. Ornamental and modern minimalist designs with durable powder coat finishes.",

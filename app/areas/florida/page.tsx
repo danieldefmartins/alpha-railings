@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/areas/florida" },
   title: "Glass & Iron Railings in Florida | Alpha Railings",
   description:
     "Premium glass, cable & iron railings in South Florida. Custom fabrication and installation in Fort Lauderdale, Miami, West Palm Beach, and across the region. Free quotes.",
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Glass & Iron Railings in Florida | Alpha Railings",
+    description: "Premium glass, cable & iron railings in South Florida. Custom fabrication and installation in Fort Lauderdale, Miami, West Palm Beach, and across the region. Free quotes.",
+    url: "https://alpharailings.com/areas/florida",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 const counties = [

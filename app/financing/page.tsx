@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/financing" },
   title: "Financing | Alpha Railings - Affordable Payment Options",
   description:
     "Alpha Railings offers flexible financing for your railing project. Low monthly payments, quick approval, no hidden fees. Premium glass, cable & iron railings made affordable.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Financing | Alpha Railings",
     description:
       "Flexible financing for premium railings. Low monthly payments, quick approval, no hidden fees.",

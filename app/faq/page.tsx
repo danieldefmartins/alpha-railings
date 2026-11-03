@@ -3,10 +3,14 @@ import Script from "next/script";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faq" },
   title: "FAQ | Alpha Railings - Frequently Asked Questions",
   description:
     "Find answers to common questions about Alpha Railings services, materials, process, and pricing. Glass, cable & iron railings across MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "FAQ | Alpha Railings",
     description:
       "Answers to common questions about our railing services, materials, installation process, and pricing.",

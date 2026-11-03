@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services/commercial-railings" },
   title: "Commercial Railings | Alpha Railings",
   description:
     "ADA-compliant commercial railing systems for offices, multi-family buildings, retail, and parking structures. Multiple materials, engineered for high traffic. Serving MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Commercial Railings | Alpha Railings",
     description:
       "ADA-compliant commercial railing systems for offices, multi-family buildings, retail, and parking structures.",

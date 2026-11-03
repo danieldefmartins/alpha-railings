@@ -38,7 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/areas/florida",
   ];
 
-  const allPages = [...staticPages, ...servicePages, ...areaPages];
+  const blogPages = ["/blog/glass-vs-cable-railings", "/blog/top-railing-trends-2025", "/blog/how-to-choose-deck-railings", "/blog/commercial-railing-requirements", "/blog/frameless-glass-shower-doors-guide", "/blog/iron-railings-classic-meets-modern", "/blog/glass-railings-oceanfront-homes", "/blog/cable-railing-installation-guide", "/blog/staircase-design-ideas", "/blog/railing-maintenance-tips", "/blog/choosing-gate-for-property", "/blog/glass-partitions-office-design", "/blog/railing-costs-breakdown", "/blog/florida-building-codes-railings", "/blog/massachusetts-railing-regulations"];
+
+  const allPages = [...staticPages, ...servicePages, ...areaPages, ...blogPages];
 
   return allPages.map((path) => ({
     url: `${baseUrl}${path}`,

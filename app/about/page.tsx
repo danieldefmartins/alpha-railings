@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Us | Alpha Railings - Custom Staircases & Premium Railings",
   description:
     "Alpha Railings specializes in custom staircases and premium railings. 15+ years of craftsmanship, in-house fabrication, shipped nationwide.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "About Us | Alpha Railings",
     description:
       "Built on innovation, driven by precision. 15+ years crafting custom staircases and premium railings — shipped nationwide.",

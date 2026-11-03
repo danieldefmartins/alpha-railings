@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   description:
     "How Alpha Railings collects, uses and protects your information, including mobile numbers and text message (SMS) consent.",
   alternates: { canonical: "https://alpharailings.com/privacy-policy" },
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Privacy Policy | Alpha Railings",
+    description: "How Alpha Railings collects, uses and protects your information, including mobile numbers and text message (SMS) consent.",
+    url: "https://alpharailings.com/privacy-policy",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 export default function PrivacyPage() {

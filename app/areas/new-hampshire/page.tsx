@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/areas/new-hampshire" },
   title: "Glass & Iron Railings in New Hampshire | Alpha Railings",
   description:
     "Premium glass, cable & iron railings in New Hampshire. Custom fabrication and installation in Manchester, Nashua, Portsmouth, and across the state. Free quotes.",
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Glass & Iron Railings in New Hampshire | Alpha Railings",
+    description: "Premium glass, cable & iron railings in New Hampshire. Custom fabrication and installation in Manchester, Nashua, Portsmouth, and across the state. Free quotes.",
+    url: "https://alpharailings.com/areas/new-hampshire",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 const counties = [

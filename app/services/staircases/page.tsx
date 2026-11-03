@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { ServicePage } from "@/components/ServicePage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services/staircases" },
   title: "Staircases & Spiral Stairs | Alpha Railings",
   description:
     "Custom straight, floating, and spiral staircases in steel, glass, and wood combinations. Structural engineering and professional installation in MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Staircases & Spiral Stairs | Alpha Railings",
     description:
       "Custom straight, floating, and spiral staircases in steel, glass, and wood combinations.",

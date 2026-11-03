@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import { QuoteForm } from "@/components/QuoteForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/quote" },
   title: "Get a Free Quote | Alpha Railings",
   description:
     "Request a free, no-obligation quote for your railing project. Custom glass, cable, and iron railings with professional installation across MA, NH, ME, RI & FL.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Get a Free Quote | Alpha Railings",
     description:
       "Request a free quote for custom glass, cable & iron railings. Professional installation across 5 states.",

@@ -2,10 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/materials" },
   title: "Material Guide | Glass vs Cable vs Iron | Alpha Railings",
   description:
     "Compare glass, cable, and iron railings side by side. Learn about pros, cons, maintenance, cost, and best applications for each material. Expert guidance from Alpha Railings.",
   openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
     title: "Material Guide | Glass vs Cable vs Iron | Alpha Railings",
     description:
       "Compare glass, cable, and iron railings. Pros, cons, maintenance, cost, and best applications for each material.",

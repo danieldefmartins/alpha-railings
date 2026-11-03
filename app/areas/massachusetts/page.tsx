@@ -2,9 +2,18 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/areas/massachusetts" },
   title: "Glass & Iron Railings in Massachusetts | Alpha Railings",
   description:
     "Premium glass, cable & iron railings in Massachusetts. Custom fabrication and installation in Boston, Cambridge, Everett, Worcester, and across the state. Free quotes.",
+  openGraph: {
+    type: "website",
+    siteName: "Alpha Railings",
+    title: "Glass & Iron Railings in Massachusetts | Alpha Railings",
+    description: "Premium glass, cable & iron railings in Massachusetts. Custom fabrication and installation in Boston, Cambridge, Everett, Worcester, and across the state. Free quotes.",
+    url: "https://alpharailings.com/areas/massachusetts",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630, alt: "Alpha Railings custom railings and staircases" }],
+  },
 };
 
 const counties = [
