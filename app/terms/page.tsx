@@ -24,9 +24,9 @@ export default function TermsPage() {
         <p>
           These terms govern your use of alpharailings.com and the communications you receive from Alpha
           Railings (&ldquo;Alpha Railings,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;). Alpha Railings is
-          operated by Alpha Railings LLC. By using the website
+          operated by ALPHA RAILINGS LLC. By using the website
           or submitting a form, you agree to these terms and to our{" "}
-          <Link href="/privacy">Privacy Policy</Link>.
+          <Link href="/privacy-policy">Privacy Policy</Link>.
         </p>
       </div>
 
@@ -88,12 +88,12 @@ export default function TermsPage() {
         <p>Carriers are not liable for delayed or undelivered messages.</p>
         <h3>Privacy</h3>
         <p>
-          No mobile information will be shared with third parties or affiliates for marketing or
-          promotional purposes. See our <Link href="/privacy">Privacy Policy</Link>.
+          No mobile information will be shared with third parties/affiliates for marketing/promotional
+          purposes. See our <Link href="/privacy-policy">Privacy Policy</Link>.
         </p>
         <h3>Support</h3>
         <p>
-          Alpha Railings (operated by Alpha Railings LLC) — <a href="tel:+17543182099">(754) 318-2099</a> —{" "}
+          Alpha Railings (operated by ALPHA RAILINGS LLC) — <a href="tel:+17543182099">(754) 318-2099</a> —{" "}
           <a href="mailto:support@alpharailings.com">support@alpharailings.com</a>
         </p>
       </div>

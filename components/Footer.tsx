@@ -117,10 +117,10 @@ export function Footer() {
             <p className="text-muted-foreground/50 text-sm">
               &copy; {new Date().getFullYear()} Alpha Railings. All rights reserved.
             </p>
-            <p className="mt-1 text-muted-foreground/50 text-xs">Alpha Railings is operated by Alpha Railings LLC.</p>
+            <p className="mt-1 text-muted-foreground/50 text-xs">Alpha Railings is operated by ALPHA RAILINGS LLC.</p>
           </div>
           <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-xs">
-            <Link href="/privacy" className="text-muted-foreground hover:text-white transition-colors">
+            <Link href="/privacy-policy" className="text-muted-foreground hover:text-white transition-colors">
               Privacy Policy
             </Link>
             <Link href="/terms" className="text-muted-foreground hover:text-white transition-colors">

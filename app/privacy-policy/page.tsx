@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Alpha Railings",
   description:
     "How Alpha Railings collects, uses and protects your information, including mobile numbers and text message (SMS) consent.",
-  alternates: { canonical: "https://alpharailings.com/privacy" },
+  alternates: { canonical: "https://alpharailings.com/privacy-policy" },
 };
 
 export default function PrivacyPage() {
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
       <div>
         <p>
           Alpha Railings (&ldquo;Alpha Railings,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;) is operated by
-          Alpha Railings LLC and respects your privacy. This policy explains what information we collect through alpharailings.com, our quote
+          ALPHA RAILINGS LLC and respects your privacy. This policy explains what information we collect through alpharailings.com, our quote
           and contact forms, phone calls, emails and text messages, and how we use and
           protect it.
         </p>
@@ -64,8 +64,8 @@ export default function PrivacyPage() {
         <h2>Mobile numbers &amp; text messaging (SMS)</h2>
         <p>
           <strong>
-            No mobile information will be shared with third parties or affiliates for marketing or
-            promotional purposes. Text messaging originator opt-in data and consent will not be shared with
+            No mobile information will be shared with third parties/affiliates for marketing/promotional
+            purposes. Text messaging originator opt-in data and consent will not be shared with
             any third parties.
           </strong>
         </p>
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
       <div>
         <h2>Contact us</h2>
         <p>
-          Alpha Railings (operated by Alpha Railings LLC)
+          Alpha Railings (operated by ALPHA RAILINGS LLC)
           <br />
           Phone: <a href="tel:+17543182099">(754) 318-2099</a>
           <br />

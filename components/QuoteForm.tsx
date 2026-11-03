@@ -194,7 +194,7 @@ export function QuoteForm({
             <input id="qf-sms" type="checkbox" checked={smsConsent} onChange={(e) => setSmsConsent(e.target.checked)} className="mt-0.5 h-4 w-4 flex-shrink-0 rounded border-border bg-primary accent-[#00d4ff]" />
             <span className="text-xs leading-relaxed text-muted-foreground">
               I agree to receive text messages from Alpha Railings about my quote, appointments and project updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help. See our{" "}
-              <Link href="/privacy" className="text-accent hover:underline">
+              <Link href="/privacy-policy" className="text-accent hover:underline">
                 Privacy Policy
               </Link>{" "}
               and{" "}
@@ -234,7 +234,7 @@ export function QuoteForm({
       </button>
       <p className="mt-3 text-center text-xs text-muted-foreground">
         Free, no-obligation. We never sell your information.{" "}
-        <Link href="/privacy" className="hover:text-accent underline-offset-2 hover:underline">
+        <Link href="/privacy-policy" className="hover:text-accent underline-offset-2 hover:underline">
           Privacy
         </Link>{" "}
         ·{" "}
