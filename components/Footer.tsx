@@ -58,6 +58,9 @@ export function Footer() {
                 </svg>
                 (754) 318-2099
               </a>
+              <a href="sms:+17543182099?&body=Hi%2C%20I%27d%20like%20a%20free%20estimate" className="text-accent text-sm font-semibold hover:underline">
+                Text us
+              </a>
             </div>
           </div>
 
