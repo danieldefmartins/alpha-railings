@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { CrmError, crm, projectTypes, submitLead } from "@/lib/crm";
+import { CrmError, crm, projectTypes, smsNoticeText, submitLead } from "@/lib/crm";
 
 const inputClass =
   "w-full bg-primary border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground/70 focus:outline-none focus:border-accent/60 focus:ring-2 focus:ring-accent/20 transition-colors";
@@ -46,7 +46,6 @@ export function QuoteForm({
   const [location, setLocation] = useState("");
   const [projectType, setProjectType] = useState("");
   const [message, setMessage] = useState("");
-  const [smsConsent, setSmsConsent] = useState(false);
   const [honeypot, setHoneypot] = useState("");
   const [status, setStatus] = useState<Status>({ kind: "idle" });
   const [source, setSource] = useState("");
@@ -77,7 +76,6 @@ export function QuoteForm({
         location,
         projectType,
         message,
-        smsConsent,
         honeypot,
         sourcePage: source || "/quote",
       });
@@ -189,22 +187,6 @@ export function QuoteForm({
           <input id="qf-website" name="website" tabIndex={-1} autoComplete="off" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} />
         </div>
 
-        <div className="sm:col-span-2">
-          <label htmlFor="qf-sms" className="flex items-start gap-3 cursor-pointer">
-            <input id="qf-sms" type="checkbox" checked={smsConsent} onChange={(e) => setSmsConsent(e.target.checked)} className="mt-0.5 h-4 w-4 flex-shrink-0 rounded border-border bg-primary accent-[#00d4ff]" />
-            <span className="text-xs leading-relaxed text-muted-foreground">
-              I agree to receive text messages from Alpha Railings about my quote, appointments and project updates. Message frequency varies. Msg &amp; data rates may apply. Reply STOP to cancel, HELP for help. See our{" "}
-              <Link href="/privacy-policy" className="text-accent hover:underline">
-                Privacy Policy
-              </Link>{" "}
-              and{" "}
-              <Link href="/terms" className="text-accent hover:underline">
-                Terms
-              </Link>
-              .
-            </span>
-          </label>
-        </div>
       </div>
 
       {status.kind === "error" && (
@@ -229,7 +211,10 @@ export function QuoteForm({
         </div>
       )}
 
-      <button type="submit" disabled={sending} className="mt-6 w-full bg-accent hover:bg-accent/90 disabled:opacity-60 text-primary px-8 py-4 rounded-lg font-display font-bold text-base transition-all hover:shadow-lg hover:shadow-accent/25">
+      <p id="qf-sms-notice" className="mt-6 text-xs leading-relaxed text-muted-foreground">
+        {smsNoticeText}
+      </p>
+      <button type="submit" disabled={sending} aria-describedby="qf-sms-notice" className="mt-4 w-full bg-accent hover:bg-accent/90 disabled:opacity-60 text-primary px-8 py-4 rounded-lg font-display font-bold text-base transition-all hover:shadow-lg hover:shadow-accent/25">
         {sending ? "Sending…" : submitLabel}
       </button>
       <p className="mt-3 text-center text-xs text-muted-foreground">

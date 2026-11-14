@@ -4,7 +4,7 @@
  *
  * Flow:
  *   GET  {apiBase}/public/website/forms/{formSlug}  -> { id, config, token, siteKey, brand }
- *   POST {apiBase}/public/website/direct-submit      { token, key, uploadSessionId, answers, smsConsent, ... }
+ *   POST {apiBase}/public/website/direct-submit      { token, key, uploadSessionId, answers, consent, ... }
  *   (360 rejects a submit sent less than 2 s after the token was issued, so we wait out the rest.)
  *
  * The 360 workspace is resolved server-side from the (globally unique) form slug,
@@ -64,8 +64,13 @@ export const projectTypes = [
   "Other / Not sure yet",
 ] as const;
 
-export const smsConsentText =
-  "I agree to receive text messages from Alpha Railings about my quote, appointments and project updates. Message frequency varies. Msg & data rates may apply. Reply STOP to cancel, HELP for help. See our Privacy Policy and Terms.";
+/**
+ * Text message notice shown directly above the submit button (no checkbox: sending the form is the
+ * agreement). One plain string: it is recorded as the consent wording and compared with the published
+ * form's text, so keep it exactly as is.
+ */
+export const smsNoticeText =
+  "By submitting this form, you agree to receive text messages from Alpha Railings about your request (quotes, scheduling, project updates). Message frequency varies. Msg & data rates may apply. Reply STOP to opt out. We will never sell or share your information.";
 
 export type Lead = {
   name: string;
@@ -74,7 +79,6 @@ export type Lead = {
   location: string;
   projectType: string;
   message: string;
-  smsConsent: boolean;
   honeypot: string;
   sourcePage: string;
 };
@@ -84,6 +88,8 @@ type FormDef = {
   config: {
     fields: { id: string; type: string; options?: string[] }[];
     thankYou?: string;
+    consentMode?: string;
+    consentText?: string;
   };
 };
 
@@ -177,10 +183,14 @@ export async function submitLead(lead: Lead): Promise<{ thankYou: string; redire
       key,
       uploadSessionId: crypto.randomUUID(),
       answers,
-      attribution: {},
-      smsConsent: lead.smsConsent,
+      attribution: { landing_page: window.location.origin + window.location.pathname },
+      smsConsent: false,
       emailConsent: false,
-      consent: false,
+      // The notice counts as agreement only when the published form shows this same notice and a phone was given.
+      consent:
+        form.config.consentMode === "notice" &&
+        (form.config.consentText ?? "").trim() === smsNoticeText &&
+        Boolean(answers[f.phone]),
       website: lead.honeypot,
       turnstileToken: "",
     }),

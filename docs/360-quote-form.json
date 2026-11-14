@@ -20,7 +20,8 @@
     { "id": "photo_2", "label": "Photo 2", "type": "file", "required": false, "step": 1, "mapping": null, "options": [], "condition": null },
     { "id": "photo_3", "label": "Photo 3", "type": "file", "required": false, "step": 1, "mapping": null, "options": [], "condition": null }
   ],
-  "consentText": "By checking this box, I agree to receive text messages from Alpha Railings about my estimate, appointments and project updates. Message frequency varies. Message & data rates may apply. Reply STOP to opt out, HELP for help. See our Privacy Policy and Terms.",
+  "consentMode": "notice",
+  "consentText": "By submitting this form, you agree to receive text messages from Alpha Railings about your request (quotes, scheduling, project updates). Message frequency varies. Msg & data rates may apply. Reply STOP to opt out. We will never sell or share your information.",
   "consentRequired": false,
   "thankYou": "Thanks — we received your quote request. Our team will reach out within 1 business day.",
   "redirect": "",
