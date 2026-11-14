@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { smsNoticeText } from "@/lib/crm";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
@@ -46,8 +47,8 @@ export default function PrivacyPage() {
             contacting us.
           </li>
           <li>
-            <strong>Text message consent:</strong> whether you opted in to receive text messages, along with
-            the date and time of that choice.
+            <strong>Text message consent:</strong> the text message notice shown on the form you submitted,
+            along with the date and time you submitted it.
           </li>
           <li>
             <strong>Automatic information:</strong> basic technical data such as browser type, device type,
@@ -62,7 +63,7 @@ export default function PrivacyPage() {
         <ul>
           <li>To respond to your request and prepare your quote or estimate.</li>
           <li>To schedule measurements, consultations, deliveries and installations.</li>
-          <li>To send project updates, and text messages only if you opted in.</li>
+          <li>To send project updates, and text messages about your request when you submit a form with your phone number.</li>
           <li>To provide customer support and improve our services and website.</li>
           <li>To prevent fraud and spam and to meet legal obligations.</li>
         </ul>
@@ -78,13 +79,17 @@ export default function PrivacyPage() {
           </strong>
         </p>
         <p>
-          We use your mobile number and SMS consent only to text you about your quote, appointments,
-          project updates and customer care. We keep a record of your SMS consent choice and when you made
-          it.
+          When you submit a form on this website with your phone number, you agree to receive text messages
+          from Alpha Railings about your request (quotes, scheduling, project updates). The form shows this
+          notice above the Submit button: &ldquo;{smsNoticeText}&rdquo;
         </p>
         <p>
-          Giving SMS consent is optional and is never a condition of receiving a quote or purchasing from
-          us. You can opt out at any time by replying <strong>STOP</strong> to any message, or by calling or
+          We use your mobile number and SMS consent only to text you about your quote, appointments,
+          project updates and customer care. We keep a record of the notice you agreed to and when you
+          submitted the form.
+        </p>
+        <p>
+          SMS consent is never a condition of purchasing from us. You can opt out at any time by replying <strong>STOP</strong> to any message, or by calling or
           emailing us using the contact details below. Reply <strong>HELP</strong> for help. See our{" "}
           <Link href="/terms#sms">SMS / Text Messaging Terms</Link>.
         </p>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { smsNoticeText } from "@/lib/crm";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
@@ -71,8 +72,10 @@ export default function TermsPage() {
         <p>Alpha Railings text messages</p>
         <h3>Program description</h3>
         <p>
-          If you check the optional text message consent box on our quote form, Alpha Railings will send
-          you text messages at the number you provide about:
+          When you submit a form on this website with your phone number, you agree to receive text messages
+          from Alpha Railings about your request (quotes, scheduling, project updates). The form shows this
+          notice above the Submit button: &ldquo;{smsNoticeText}&rdquo; Alpha Railings will send you text
+          messages at the number you provide about:
         </p>
         <ul>
           <li>quote follow-ups;</li>
